@@ -18,8 +18,8 @@ export default {
       links: [
         { icon: "deviant.png", url: "https://www.deviantart.com/b4dr1ck", title: "DeviantArt" },
         { icon: "insta.png", url: "https://instagram.com/bad_rick_1988", title: "Instagram" },
-        { icon: "pinterest.png", url: "https://www.pinterest.com/badrick251288", title: "Pinterest" },
-        { icon: "artstat.png", url: "", title: "ArtStation" },
+        { icon: "pinterest.png", url: "https://at.pinterest.com/badrick251288", title: "Pinterest" },
+        { icon: "artstat.png", url: "https://www.artstation.com/badrick", title: "ArtStation" },
       ],
     };
   },
