@@ -16,15 +16,16 @@ export default {
         imgThumbWidth: 300,
       },
       links: [
-        { icon: "deviant.png", url: "https://www.deviantart.com/b4dr1ck" },
-        { icon: "insta.png", url: "https://instagram.com/bad_rick_1988" },
-        { icon: "artstat.png", url: "" },
+        { icon: "deviant.png", url: "https://www.deviantart.com/b4dr1ck", title: "DeviantArt" },
+        { icon: "insta.png", url: "https://instagram.com/bad_rick_1988", title: "Instagram" },
+        { icon: "pinterest.png", url: "https://www.pinterest.com/badrick251288", title: "Pinterest" },
+        { icon: "artstat.png", url: "", title: "ArtStation" },
       ],
     };
   },
 
   methods: {
-    openLink(url,_event) {
+    openLink(url, _event) {
       window.open(url, "_blank");
     },
     showImage(event) {
@@ -38,19 +39,20 @@ export default {
 </script>
 
 <template>
+  <!-- Title -->
+  <h1 class="text-h1 text-center">badricks-world.at</h1>
   <!-- Social media links -->
-  <div class="d-flex justify-end pa-4 position-absolute ligth">
+  <div class="d-flex justify-center pb-2">
     <img
+      :title="link.title"
       width="40"
       class="ma-2"
       v-for="(link, index) in links"
       :key="'link-' + index"
       :src="`${settings.iconPath}${link.icon}`"
-      @click="openLink(link.url,$event)"
+      @click="openLink(link.url, $event)"
       :alt="link.icon" />
   </div>
-  <!-- Title -->
-  <h1 class="text-h1 text-center">badricks-world.at</h1>
 
   <!-- Carousel for featured images -->
   <v-carousel cycle hide-delimiters :height="settings.carouselMaxHeight">
@@ -95,9 +97,5 @@ export default {
 
 h1 {
   font-family: "badGrundge", sans-serif !important;
-}
-
-.ligth {
-  filter:contrast(250% 250%); ;
 }
 </style>
