@@ -8,16 +8,25 @@ export default {
       imgData,
       carouselImg: ["back.png", "outta_my_head.png", "food_chain.png"],
       settings: {
-        imgOrigPath:"img/original/",
+        imgOrigPath: "img/original/",
         imgSmallPath: "img/small/",
-        carouselMaxHeight: 600,
+        iconPath: "icons/",
+        carouselMaxHeight: 700,
         imgThumbHeight: 300,
         imgThumbWidth: 300,
       },
+      links: [
+        { icon: "deviant.png", url: "https://www.deviantart.com/b4dr1ck" },
+        { icon: "insta.png", url: "https://instagram.com/bad_rick_1988" },
+        { icon: "artstat.png", url: "" },
+      ],
     };
   },
 
   methods: {
+    openLink(url,_event) {
+      window.open(url, "_blank");
+    },
     showImage(event) {
       const a = document.createElement("a");
       a.target = "_blank";
@@ -29,17 +38,30 @@ export default {
 </script>
 
 <template>
+  <!-- Social media links -->
+  <div class="d-flex justify-end pa-4 position-absolute ligth">
+    <img
+      width="40"
+      class="ma-2"
+      v-for="(link, index) in links"
+      :key="'link-' + index"
+      :src="`${settings.iconPath}${link.icon}`"
+      @click="openLink(link.url,$event)"
+      :alt="link.icon" />
+  </div>
+  <!-- Title -->
+  <h1 class="text-h1 text-center">badricks-world.at</h1>
+
   <!-- Carousel for featured images -->
-  <v-carousel hide-delimiters :height="settings.carouselMaxHeight">
+  <v-carousel cycle hide-delimiters :height="settings.carouselMaxHeight">
     <v-carousel-item
       cover
+      position="right top"
       v-for="(img, index) in carouselImg"
       :key="'carousel-' + index"
       :src="`${settings.imgOrigPath}${img}`"
       :lazy-src="`${settings.imgSmallPath}${img}`"
-      :alt="img"
-      cycle
-    ></v-carousel-item>
+      :alt="img"></v-carousel-item>
   </v-carousel>
 
   <!-- Image gallery -->
@@ -55,8 +77,7 @@ export default {
       class="ma-1"
       cover
       :lazy-src="`${settings.imgSmallPath}${img}`"
-      :src="`${settings.imgOrigPath}${img}`"
-    >
+      :src="`${settings.imgOrigPath}${img}`">
       <template v-slot:placeholder>
         <div class="d-flex align-center justify-center fill-height">
           <v-progress-circular color="grey-lighten-4" indeterminate></v-progress-circular>
@@ -66,4 +87,17 @@ export default {
   </div>
 </template>
 
-<style></style>
+<style>
+@font-face {
+  font-family: "badGrundge";
+  src: url("./fonts/bg.ttf");
+}
+
+h1 {
+  font-family: "badGrundge", sans-serif !important;
+}
+
+.ligth {
+  filter:contrast(250% 250%); ;
+}
+</style>

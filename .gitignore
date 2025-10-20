@@ -31,3 +31,6 @@ coverage
 
 # media data
 public/img/
+public/fonts
+public/icons
+
