@@ -24,6 +24,14 @@ export default {
     };
   },
 
+  computed: {
+    coverOnPortraitFormat() {
+      if (window.innerHeight > window.innerWidth) {
+        return true;
+      }
+      return false;
+    },
+  },
   methods: {
     openLink(url, _event) {
       window.open(url, "_blank");
@@ -40,7 +48,7 @@ export default {
 
 <template>
   <!-- Title -->
-  <h1 class="text-h1 text-center">badricks-world.at</h1>
+  <h1 class="text-h1 text-center bg-black">badricks-world.at</h1>
   <!-- Social media links -->
   <div class="d-flex justify-center pb-2">
     <img
@@ -55,16 +63,17 @@ export default {
   </div>
 
   <!-- Carousel for featured images -->
-  <v-carousel cycle hide-delimiters :height="settings.carouselMaxHeight">
-    <v-carousel-item
-      cover
-      position="right top"
-      v-for="(img, index) in carouselImg"
-      :key="'carousel-' + index"
-      :src="`${settings.imgOrigPath}${img}`"
-      :lazy-src="`${settings.imgSmallPath}${img}`"
-      :alt="img"></v-carousel-item>
-  </v-carousel>
+  <div id="carousel">
+    <v-carousel cycle hide-delimiters :height="settings.carouselMaxHeight">
+      <v-carousel-item
+        :cover="coverOnPortraitFormat"
+        v-for="(img, index) in carouselImg"
+        :key="'carousel-' + index"
+        :src="`${settings.imgOrigPath}${img}`"
+        :lazy-src="`${settings.imgSmallPath}${img}`"
+        :alt="img"></v-carousel-item>
+    </v-carousel>
+  </div>
 
   <!-- Image gallery -->
   <div class="d-flex flex-wrap">
@@ -97,5 +106,11 @@ export default {
 
 h1 {
   font-family: "badGrundge", sans-serif !important;
+}
+
+#carousel {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("./img/banner.png") repeat center center;
+  background-size: cover;
 }
 </style>
