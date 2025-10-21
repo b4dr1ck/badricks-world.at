@@ -1,17 +1,18 @@
 <script>
-import { imgData } from "./img_data.js";
+import { imgData, imgTitles } from "./img_data.js";
 
 export default {
   name: "App",
   data() {
     return {
       imgData,
+      imgTitles,
       carouselImg: imgData.slice(0, 5), // First 5 images for carousel
       settings: {
         imgOrigPath: "img/original/",
         imgSmallPath: "img/small/",
         iconPath: "icons/",
-        carouselMaxHeight: '82vh',
+        carouselMaxHeight: "82vh",
         imgThumbHeight: 300,
         imgThumbWidth: 300,
       },
@@ -19,7 +20,7 @@ export default {
         { icon: "deviant.png", url: "https://www.deviantart.com/b4dr1ck", title: "DeviantArt" },
         { icon: "insta.png", url: "https://instagram.com/bad_rick_1988", title: "Instagram" },
         { icon: "pinterest.png", url: "https://at.pinterest.com/badrick251288", title: "Pinterest" },
-        { icon: "artstat.png", url: "https://www.artstation.com/badrick", title: "ArtStation" },
+        { icon: "artstat.png", url: "https://badrick.artstation.com/", title: "ArtStation" },
         { icon: "email.png", url: "email", title: "E-Mail" },
       ],
     };
@@ -43,7 +44,7 @@ export default {
     showImage(event) {
       const a = document.createElement("a");
       a.target = "_blank";
-      a.href = event.target.src;
+      a.href = event.currentTarget.querySelector("img").src;
       a.click();
     },
   },
@@ -54,7 +55,7 @@ export default {
   <!-- Title -->
   <h1 class="text-h1 text-center bg-black">badricks-world.at</h1>
   <!-- Social media links -->
-  <div class="d-flex justify-center pb-2">
+  <div id="socialMediaLinks" class="d-flex justify-center pb-2">
     <img
       :title="link.title"
       width="40"
@@ -80,7 +81,7 @@ export default {
   </div>
 
   <!-- Image gallery -->
-  <div class="d-flex flex-wrap">
+  <div id="gallery" class="d-flex flex-wrap">
     <v-img
       v-for="(img, index) in imgData"
       :key="'gallery-' + index"
@@ -98,6 +99,11 @@ export default {
           <v-progress-circular color="grey-lighten-4" indeterminate></v-progress-circular>
         </div>
       </template>
+      <template v-slot:default>
+        <p style="background-color: rgba(0, 0, 0, 0.7); opacity: 0" class="text-body-1 pa-2 text-center text-red">
+          {{ imgTitles[img] }}
+        </p>
+      </template>
     </v-img>
   </div>
 </template>
@@ -113,9 +119,20 @@ h1 {
 }
 
 #carousel {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
-    url("./img/banner.png") repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("./img/banner.png") repeat center center;
   background-size: cover;
   height: 82vh;
+}
+
+#socialMediaLinks img:hover {
+  filter: contrast(0) brightness(2);
+}
+
+#gallery .v-img:hover p{
+  opacity: 1 !important;
+}
+
+#gallery .v-img:hover img {
+  filter:grayscale(100%) brightness(90%);
 }
 </style>
