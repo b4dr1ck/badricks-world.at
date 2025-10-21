@@ -6,7 +6,7 @@ export default {
   data() {
     return {
       imgData,
-      carouselImg: ["back.png", "outta_my_head.png", "food_chain.png"],
+      carouselImg: imgData.slice(0, 5), // First 5 images for carousel
       settings: {
         imgOrigPath: "img/original/",
         imgSmallPath: "img/small/",
