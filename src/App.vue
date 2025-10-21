@@ -7,7 +7,7 @@ export default {
     return {
       imgData,
       imgTitles,
-      carouselImg: ["back.png","tree.png","crackedFaces.png","girlAndMonstersX.jpg","food_chain.png"],
+      carouselImg: ["back.png", "tree.png", "crackedFaces.png", "girlAndMonstersX.jpg", "food_chain.png"],
       settings: {
         imgOrigPath: "img/original/",
         imgSmallPath: "img/small/",
@@ -70,7 +70,10 @@ export default {
     <!-- Overlay Text -->
     <div id="carousel-overlay" class="d-flex align-center justify-center">
       <!-- Title -->
-      <h1 style="width: 100%;" class="text-h1 text-center bg-black pa-5">badricks-world.at</h1>
+      <div style="width: 100%">
+        <h1 class="text-h1 text-center bg-black pa-0 ma-0">badricks-world.at</h1>
+        <p class="text-body-1 text-center bg-black pb-5 ma-0 font-weight-bold">All work and no drawing makes badrick a dull boy!</p>
+      </div>
     </div>
     <v-carousel cycle hide-delimiters :height="settings.carouselMaxHeight" :show-arrows="false">
       <v-carousel-item
