@@ -11,7 +11,7 @@ export default {
         imgOrigPath: "img/original/",
         imgSmallPath: "img/small/",
         iconPath: "icons/",
-        carouselMaxHeight: 700,
+        carouselMaxHeight: '82vh',
         imgThumbHeight: 300,
         imgThumbWidth: 300,
       },
@@ -20,6 +20,7 @@ export default {
         { icon: "insta.png", url: "https://instagram.com/bad_rick_1988", title: "Instagram" },
         { icon: "pinterest.png", url: "https://at.pinterest.com/badrick251288", title: "Pinterest" },
         { icon: "artstat.png", url: "https://www.artstation.com/badrick", title: "ArtStation" },
+        { icon: "email.png", url: "email", title: "E-Mail" },
       ],
     };
   },
@@ -34,6 +35,9 @@ export default {
   },
   methods: {
     openLink(url, _event) {
+      if (url === "email") {
+        window.location.href = "mailto:badrick251288@gmail.com?subject=badricks-world.at";
+      }
       window.open(url, "_blank");
     },
     showImage(event) {
@@ -54,7 +58,7 @@ export default {
     <img
       :title="link.title"
       width="40"
-      class="ma-2"
+      class="ma-2 cursor-pointer"
       v-for="(link, index) in links"
       :key="'link-' + index"
       :src="`${settings.iconPath}${link.icon}`"
@@ -85,7 +89,7 @@ export default {
       @click="showImage($event)"
       :height="settings.imgThumbHeight"
       :width="settings.imgThumbWidth"
-      class="ma-1"
+      class="ma-1 cursor-pointer"
       cover
       :lazy-src="`${settings.imgSmallPath}${img}`"
       :src="`${settings.imgOrigPath}${img}`">
@@ -112,5 +116,6 @@ h1 {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url("./img/banner.png") repeat center center;
   background-size: cover;
+  height: 82vh;
 }
 </style>
