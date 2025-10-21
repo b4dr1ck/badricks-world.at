@@ -7,7 +7,7 @@ export default {
     return {
       imgData,
       imgTitles,
-      carouselImg: imgData.slice(0, 5), // First 5 images for carousel
+      carouselImg: ["back.png","tree.png","crackedFaces.png","girlAndMonstersX.jpg","food_chain.png"],
       settings: {
         imgOrigPath: "img/original/",
         imgSmallPath: "img/small/",
@@ -52,8 +52,6 @@ export default {
 </script>
 
 <template>
-  <!-- Title -->
-  <h1 class="text-h1 text-center bg-black">badricks-world.at</h1>
   <!-- Social media links -->
   <div id="socialMediaLinks" class="d-flex justify-center pb-2">
     <img
@@ -69,14 +67,20 @@ export default {
 
   <!-- Carousel for featured images -->
   <div id="carousel">
-    <v-carousel cycle hide-delimiters :height="settings.carouselMaxHeight">
+    <!-- Overlay Text -->
+    <div id="carousel-overlay" class="d-flex align-center justify-center">
+      <!-- Title -->
+      <h1 style="width: 100%;" class="text-h1 text-center bg-black pa-5">badricks-world.at</h1>
+    </div>
+    <v-carousel cycle hide-delimiters :height="settings.carouselMaxHeight" :show-arrows="false">
       <v-carousel-item
         :cover="coverOnPortraitFormat"
         v-for="(img, index) in carouselImg"
         :key="'carousel-' + index"
         :src="`${settings.imgOrigPath}${img}`"
         :lazy-src="`${settings.imgSmallPath}${img}`"
-        :alt="img"></v-carousel-item>
+        :alt="img">
+      </v-carousel-item>
     </v-carousel>
   </div>
 
@@ -122,17 +126,28 @@ h1 {
   background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("./img/banner.png") repeat center center;
   background-size: cover;
   height: 82vh;
+  position: relative;
+}
+
+#carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0.7;
 }
 
 #socialMediaLinks img:hover {
   filter: contrast(0) brightness(2);
 }
 
-#gallery .v-img:hover p{
+#gallery .v-img:hover p {
   opacity: 1 !important;
 }
 
 #gallery .v-img:hover img {
-  filter:grayscale(100%) brightness(90%);
+  filter: grayscale(100%) brightness(90%);
 }
 </style>
