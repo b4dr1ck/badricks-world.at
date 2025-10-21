@@ -146,8 +146,28 @@ h1 {
   filter: contrast(0) brightness(2);
 }
 
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 #gallery .v-img:hover p {
   opacity: 1 !important;
+  animation: shake 0.5s ease-in-out; /* Apply the shake animation */
+  animation-iteration-count: 1; /* Shake only once per hover */
 }
 
 #gallery .v-img:hover img {
