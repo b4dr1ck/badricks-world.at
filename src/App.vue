@@ -11,7 +11,7 @@ export default {
       settings: {
         imgOrigPath: "img/original/",
         imgSmallPath: "img/small/",
-        iconPath: "icons/",
+        iconPath: "img/icons/",
         carouselMaxHeight: "82vh",
         imgThumbHeight: 300,
         imgThumbWidth: 300,
@@ -120,7 +120,7 @@ export default {
 <style>
 @font-face {
   font-family: "badGrundge";
-  src: url("./fonts/bg.ttf");
+  src: url("/fonts/bg.ttf");
 }
 
 h1 {
@@ -128,7 +128,7 @@ h1 {
 }
 
 #carousel {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("./img/banner.png") repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/img/banner.png") repeat center center;
   background-size: cover;
   height: 82vh;
   position: relative;
