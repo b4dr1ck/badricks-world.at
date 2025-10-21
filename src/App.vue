@@ -72,7 +72,9 @@ export default {
       <!-- Title -->
       <div style="width: 100%">
         <h1 class="text-h1 text-center bg-black pa-0 ma-0">badricks-world.at</h1>
-        <p class="text-body-1 text-center bg-black pb-5 ma-0 font-weight-bold">All work and no drawing makes badrick a dull boy!</p>
+        <p class="text-body-1 text-center bg-black pb-5 ma-0 font-weight-bold">
+          All work and no drawing makes badrick a dull boy!
+        </p>
       </div>
     </div>
     <v-carousel cycle hide-delimiters :height="settings.carouselMaxHeight" :show-arrows="false">
@@ -142,31 +144,32 @@ h1 {
   opacity: 0.7;
 }
 
-#socialMediaLinks img:hover {
-  filter: contrast(0) brightness(2);
-}
-
-@keyframes shake {
+@keyframes shakeUpDown {
   0% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
   25% {
-    transform: translateX(-5px);
+    transform: translateY(5px);
   }
   50% {
-    transform: translateX(5px);
+    transform: translateY(-5px);
   }
   75% {
-    transform: translateX(-5px);
+    transform: translateY(5px);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
+#socialMediaLinks img:hover {
+  filter: contrast(0) brightness(2);
+  animation: shakeUpDown 0.3s ease-in-out; /* Apply the shake animation */
+  animation-iteration-count: 1; /* Shake only once per hover */
+}
 #gallery .v-img:hover p {
   opacity: 1 !important;
-  animation: shake 0.5s ease-in-out; /* Apply the shake animation */
+  animation: shakeUpDown 0.3s ease-in-out; /* Apply the shake animation */
   animation-iteration-count: 1; /* Shake only once per hover */
 }
 
