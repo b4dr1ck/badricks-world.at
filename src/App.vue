@@ -115,6 +115,11 @@ export default {
       </template>
     </v-img>
   </div>
+  <footer class="text-center pa-4">
+    <p class="text-body-2">
+      © {{ new Date().getFullYear() }} badricks-world.at | All rights reserved.
+    </p>
+  </footer>
 </template>
 
 <style>
