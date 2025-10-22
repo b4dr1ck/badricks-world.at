@@ -9,9 +9,9 @@ export default {
       imgTitles,
       carouselImg: ["back.png", "tree.png", "crackedFaces.png", "girlAndMonstersX.jpg", "food_chain.png"],
       settings: {
-        imgOrigPath: "img/original/",
-        imgSmallPath: "img/small/",
-        iconPath: "img/icons/",
+        imgOrigPath: "/img/original/",
+        imgSmallPath: "/img/small/",
+        iconPath: "/img/icons/",
         carouselMaxHeight: "82vh",
         imgThumbHeight: 300,
         imgThumbWidth: 300,
@@ -77,7 +77,7 @@ export default {
         </p>
       </div>
     </div>
-    <v-carousel cycle hide-delimiters :height="settings.carouselMaxHeight" :show-arrows="false">
+    <v-carousel cycle :height="settings.carouselMaxHeight" :show-arrows="false">
       <v-carousel-item
         :cover="coverOnPortraitFormat"
         v-for="(img, index) in carouselImg"
@@ -119,12 +119,12 @@ export default {
 
 <style>
 @font-face {
-  font-family: "badGrundge";
-  src: url("/fonts/bg.ttf");
+  font-family: "headerFont";
+  src: url("/fonts/dirtyego.TTF");
 }
 
 h1 {
-  font-family: "badGrundge", sans-serif !important;
+  font-family: "headerFont", sans-serif !important;
 }
 
 #carousel {
@@ -164,13 +164,13 @@ h1 {
 
 #socialMediaLinks img:hover {
   filter: contrast(0) brightness(2);
-  animation: shakeUpDown 0.3s ease-in-out; /* Apply the shake animation */
-  animation-iteration-count: 1; /* Shake only once per hover */
+  animation: shakeUpDown 0.3s ease-in-out; 
+  animation-iteration-count: 1; 
 }
 #gallery .v-img:hover p {
   opacity: 1 !important;
-  animation: shakeUpDown 0.3s ease-in-out; /* Apply the shake animation */
-  animation-iteration-count: 1; /* Shake only once per hover */
+  animation: shakeUpDown 0.3s ease-in-out;
+  animation-iteration-count: 1; 
 }
 
 #gallery .v-img:hover img {
