@@ -167,18 +167,22 @@ h1 {
   animation: shakeUpDown 0.3s ease-in-out;
   animation-iteration-count: 1;
 }
+
+#gallery .v-img p {
+  opacity:0 !important;
+}
+
 #gallery .v-img:hover p {
-  opacity: 1 !important;
-  animation: shakeUpDown 0.3s ease-in-out;
-  animation-iteration-count: 1;
+  opacity:1 !important;
+  transition: opacity 0.5s ease-in-out;
 }
 
 #gallery .v-img img {
-  filter: grayscale(0%); 
-  transition: filter 0.5s ease-in-out; 
+  filter: grayscale(0%);
+  transition: filter 0.5s ease-in-out;
 }
 
 #gallery .v-img:hover img {
-  filter: grayscale(100%); 
+  filter: grayscale(100%);
 }
 </style>
