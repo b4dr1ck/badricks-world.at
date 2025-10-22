@@ -164,16 +164,21 @@ h1 {
 
 #socialMediaLinks img:hover {
   filter: contrast(0) brightness(2);
-  animation: shakeUpDown 0.3s ease-in-out; 
-  animation-iteration-count: 1; 
+  animation: shakeUpDown 0.3s ease-in-out;
+  animation-iteration-count: 1;
 }
 #gallery .v-img:hover p {
   opacity: 1 !important;
   animation: shakeUpDown 0.3s ease-in-out;
-  animation-iteration-count: 1; 
+  animation-iteration-count: 1;
+}
+
+#gallery .v-img img {
+  filter: grayscale(0%); 
+  transition: filter 0.5s ease-in-out; 
 }
 
 #gallery .v-img:hover img {
-  filter: grayscale(100%) brightness(90%);
+  filter: grayscale(100%); 
 }
 </style>
