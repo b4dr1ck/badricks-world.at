@@ -1,4 +1,5 @@
 export const imgTitles = {
+  "rapidRabbit.png":"Rapid Rabbit",
   "unicorn.png": "Last Unicorn",
   "back.png": "I Am Back",
   "hood.jpg": "Hooded",
@@ -88,6 +89,7 @@ export const imgTitles = {
 };
 
 export const imgData = [
+  "rapidRabbit.png",
   "unicorn.png",
   "back.png",
   "hood.jpg",
