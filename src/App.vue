@@ -154,6 +154,10 @@ h1 {
   opacity: 0.7;
 }
 
+.v-carousel__controls {
+  z-index: 20 !important;
+}
+
 @keyframes shakeUpDown {
   0% {
     transform: translateY(0);
