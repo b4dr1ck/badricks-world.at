@@ -4,6 +4,7 @@ destination_dir="$1"
 assets_dir="$2"
 repo_dir="$3"
 
+export PATH="/home/badrick/bin:$PATH"
 
 rtcCheck() {
   rtc=$1
