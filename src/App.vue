@@ -1,5 +1,5 @@
 <script>
-import { imgData, imgTitles } from "./img_data.js";
+import { imgData, imgTitles } from "./data.js";
 
 export default {
   name: "App",
