@@ -7,7 +7,14 @@ export default {
     return {
       imgData,
       imgTitles,
-      carouselImg: ["back.png", "tree.png", "crackedFaces.png", "girlAndMonstersX.jpg", "food_chain.png"],
+      carouselImg: [
+        "back.png",
+        "tree.png",
+        "crackedFaces.png",
+        "girlAndMonstersX.jpg",
+        "food_chain.png",
+        "afterHours.jpg",
+      ],
       settings: {
         imgOrigPath: "/img/original/",
         imgSmallPath: "/img/small/",
@@ -116,9 +123,7 @@ export default {
     </v-img>
   </div>
   <footer class="text-center pa-4">
-    <p class="text-body-2">
-      © {{ new Date().getFullYear() }} badricks-world.at | All rights reserved.
-    </p>
+    <p class="text-body-2">© {{ new Date().getFullYear() }} badricks-world.at | All rights reserved.</p>
   </footer>
 </template>
 
@@ -174,11 +179,11 @@ h1 {
 }
 
 #gallery .v-img p {
-  opacity:0 !important;
+  opacity: 0 !important;
 }
 
 #gallery .v-img:hover p {
-  opacity:1 !important;
+  opacity: 1 !important;
   transition: opacity 0.5s ease-in-out;
 }
 
