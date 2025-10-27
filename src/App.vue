@@ -44,7 +44,8 @@ export default {
   methods: {
     openLink(url, _event) {
       if (url === "email") {
-        window.location.href = "mailto:badrick251288@gmail.com?subject=badricks-world.at";
+        alert("Nope!")
+        return;
       }
       window.open(url, "_blank");
     },
