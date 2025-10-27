@@ -1,12 +1,19 @@
 <script>
-import { imgData, imgTitles } from "./data.js";
+import { imgData } from "./data.js";
+import ImageViewer from "./components/ImageViewer.vue";
 
 export default {
   name: "App",
+  components: {
+    ImageViewer,
+  },
   data() {
     return {
+      imgOverlay: false,
       imgData,
-      imgTitles,
+      imgFile: "",
+      imgTitle: "",
+      imgDesc: "",
       carouselImg: [
         "back.png",
         "tree.png",
@@ -44,22 +51,31 @@ export default {
   methods: {
     openLink(url, _event) {
       if (url === "email") {
-        alert("Nope!")
+        alert("Nope!");
         return;
       }
       window.open(url, "_blank");
     },
     showImage(event) {
-      const a = document.createElement("a");
-      a.target = "_blank";
-      a.href = event.currentTarget.querySelector("img").src;
-      a.click();
+      this.imgFile = event.currentTarget.getAttribute("img");
+      this.imgTitle = this.imgData.find((img) => img.file === this.imgFile).title;
+      this.imgDesc = this.imgData.find((img) => img.file === this.imgFile).description;
+      this.imgOverlay = true;
     },
   },
 };
 </script>
 
 <template>
+  <!-- Image viewer overlay -->
+  <image-viewer
+    @close="imgOverlay = false"
+    v-if="imgOverlay"
+    :settings="settings"
+    :imgFile="imgFile"
+    :imgTitle="imgTitle"
+    :imgDesc="imgDesc"></image-viewer>
+
   <!-- Social media links -->
   <div id="socialMediaLinks" class="d-flex justify-center pb-2">
     <img
@@ -96,21 +112,20 @@ export default {
       </v-carousel-item>
     </v-carousel>
   </div>
-
   <!-- Image gallery -->
   <div id="gallery" class="d-flex flex-wrap">
     <v-img
       v-for="(img, index) in imgData"
       :key="'gallery-' + index"
-      :img="img"
-      :alt="img"
+      :img="img.file"
+      :alt="img.file"
       @click="showImage($event)"
       :height="settings.imgThumbHeight"
       :width="settings.imgThumbWidth"
       class="ma-1 cursor-pointer"
       cover
-      :lazy-src="`${settings.imgSmallPath}${img}`"
-      :src="`${settings.imgOrigPath}${img}`">
+      :lazy-src="`${settings.imgSmallPath}${img.file}`"
+      :src="`${settings.imgOrigPath}${img.file}`">
       <template v-slot:placeholder>
         <div class="d-flex align-center justify-center fill-height">
           <v-progress-circular color="grey-lighten-4" indeterminate></v-progress-circular>
@@ -118,7 +133,7 @@ export default {
       </template>
       <template v-slot:default>
         <p style="background-color: rgba(0, 0, 0, 0.7); opacity: 0" class="text-body-1 pa-2 text-center text-red">
-          {{ imgTitles[img] }}
+          {{ img.title }}
         </p>
       </template>
     </v-img>
