@@ -78,12 +78,57 @@ export const imgData = [
   { file: "ugly.jpg", title: "Aren't We Beautiful?", description: "" },
   { file: "planets.jpg", title: "Draining Planets", description: "" },
   { file: "bridge2.jpg", title: "The Bridge", description: "" },
-  { file: "landescape.jpg", title: "Foreign Landescape", description: "" },
-  { file: "puke.jpg", title: "Conema (Commercial Enema)", description: "" },
-  { file: "lizardOnTheRock.jpg", title: "Step Through A Strange World", description: "" },
-  { file: "teeth.jpg", title: "Cleft Lip", description: "" },
-  { file: "Contract.jpg", title: "The Contract", description: "" },
-  { file: "Spoteye.jpg", title: "Spoteye", description: "" },
+  { 
+    file: "landescape.jpg", 
+    title: "Foreign Landescape", 
+    description: 
+    "" },
+  {
+    file: "puke.jpg",
+    title: "Conema (Commercial Enema)",
+    description:
+      "This picture is a commentary on the advertising industry and consumer culture. " +
+      "It shows a strange figure being getting an enema from the T.V and puking out various products and logos in the humans head. " +
+      "Pitty that the resolution of this picture is quite low, so you can't see all the details properly. " +
+      "One of the things in the vomit is the 'The Lament Configuration' from the HELLRAISER movies. Because I am a big fan of the series.",
+  },
+  {
+    file: "lizardOnTheRock.jpg",
+    title: "Step Through A Strange World",
+    description:
+      "This was one of my first pictures I painted with Corel Painter. " +
+      "The idea for this one came from a movie where some guys stepped through the everglades " +
+      "and an alligator was watching them in the front lying on a rock. " +
+      "The colors and lighting in this picture are pretty cool I think and so it still is in my gallery.",
+  },
+  {
+    file: "teeth.jpg",
+    title: "Cleft Lip",
+    description:
+      "I like the idea of the open mouth showing the teeth and gums which reminds me of a cleft lip. " +
+      "That's why I choose this title for the picture. " +
+      "I often use a 'cleft lip' in my artworks when I use faces. " +
+      "Maybe because I my brother was born with it.",
+  },
+  {
+    file: "Contract.jpg",
+    title: "The Contract",
+    description:
+      "I don't excatly remember how I came up with this idea, but it reminds me a bit of an IRON MAIDEN cover. " +
+      "The cover shows a girl have a tarot card in her hand while eddie (the band's mascot) is looming behind her. " +
+      "I guess this was inspring me for this picture. " +
+      "I also put some fun-stuff in there, like the text in the contract and some notes lying on the table. " +
+      "You have to see the original to read it properly. " +
+      "For the hands of the demon I used some photo-references of my own hands to get the anatomy halways right. " +
+      "I think the lighting also works quite well in this picture too and despite my nowadays critical view on my older works, I still like it.",
+  },
+  {
+    file: "Spoteye.jpg",
+    title: "Spoteye",
+    description:
+      "A spontaneous idea I had. I liked the idea of that face and it's small dot-like eyes. " +
+      "Also one of my earlier works.",
+  },
   {
     file: "Reaper.jpg",
     title: "Eulogy",
