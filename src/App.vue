@@ -9,6 +9,7 @@ export default {
   },
   data() {
     return {
+      coverCarousel: false,
       showSideNav: false,
       imgOverlay: false,
       imgData,
@@ -43,10 +44,12 @@ export default {
 
   mounted() {
     this.showOnScroll();
+    window.addEventListener("resize", this.coverOnPortraitFormat);
     window.addEventListener("resize", this.showOnScroll);
     window.addEventListener("scroll", this.showOnScroll);
   },
   beforeDestroy() {
+    window.removeEventListener("resize", this.coverOnPortraitFormat);
     window.removeEventListener("resize", this.showOnScroll);
     window.removeEventListener("scroll", this.showOnScroll);
   },
@@ -58,12 +61,6 @@ export default {
       }
       return "mdi-grid-large"
     },
-    coverOnPortraitFormat() {
-      if (window.innerHeight > window.innerWidth) {
-        return true;
-      }
-      return false;
-    },
   },
   methods: {
     scrollToArea() {
@@ -73,6 +70,13 @@ export default {
         scrollTo.scrollIntoView({ behavior: "smooth" });
       }
       this.showSideNav = false;
+    },
+    coverOnPortraitFormat() {
+      if (window.innerHeight > window.innerWidth) {
+        this.coverCarousel = true;
+        return;
+      }
+      this.coverCarousel = false;
     },
     showOnScroll() {
       // return true if scrolled more than 300px
@@ -136,7 +140,7 @@ export default {
     </div>
     <v-carousel cycle :height="settings.carouselMaxHeight" :show-arrows="false">
       <v-carousel-item
-        :cover="coverOnPortraitFormat"
+        :cover="coverCarousel"
         v-for="(img, index) in carouselImg"
         :key="'carousel-' + index"
         :src="`${settings.imgOrigPath}${img}`"
@@ -255,3 +259,4 @@ h1 {
   filter: grayscale(100%);
 }
 </style>
+
