@@ -44,6 +44,7 @@ export default {
 
   mounted() {
     this.showOnScroll();
+    this.coverOnPortraitFormat();
     window.addEventListener("resize", this.coverOnPortraitFormat);
     window.addEventListener("resize", this.showOnScroll);
     window.addEventListener("scroll", this.showOnScroll);
