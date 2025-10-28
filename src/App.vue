@@ -9,6 +9,7 @@ export default {
   },
   data() {
     return {
+      showSideNav: false,
       imgOverlay: false,
       imgData,
       imgFile: "",
@@ -40,7 +41,23 @@ export default {
     };
   },
 
+  mounted() {
+    this.showOnScroll();
+    window.addEventListener("resize", this.showOnScroll);
+    window.addEventListener("scroll", this.showOnScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.showOnScroll);
+    window.removeEventListener("scroll", this.showOnScroll);
+  },
+
   computed: {
+    gridViewBtnIcon() {
+      if (this.gridView) {
+        return "mdi-grid";
+      }
+      return "mdi-grid-large"
+    },
     coverOnPortraitFormat() {
       if (window.innerHeight > window.innerWidth) {
         return true;
@@ -49,6 +66,22 @@ export default {
     },
   },
   methods: {
+    scrollToArea() {
+      const scrollTo = this.$refs["socialLinks"];
+
+      if (scrollTo) {
+        scrollTo.scrollIntoView({ behavior: "smooth" });
+      }
+      this.showSideNav = false;
+    },
+    showOnScroll() {
+      // return true if scrolled more than 300px
+      if (window.scrollY > 300) {
+        this.showSideNav = true;
+        return;
+      }
+      this.showSideNav = false;
+    },
     openLink(url, _event) {
       if (url === "email") {
         alert("Nope!");
@@ -77,7 +110,7 @@ export default {
     :imgDesc="imgDesc"></image-viewer>
 
   <!-- Social media links -->
-  <div id="socialMediaLinks" class="d-flex justify-center pb-2">
+  <div id="socialMediaLinks" class="d-flex justify-center pb-2" ref="socialLinks">
     <img
       :title="link.title"
       width="40"
@@ -138,6 +171,12 @@ export default {
       </template>
     </v-img>
   </div>
+
+  <!-- Side Navigation-->
+  <div v-if="showSideNav" class="position-fixed bottom-0 left-0 pa-4 d-flex flex-column">
+    <v-btn title="Scroll To Top" @click="scrollToArea($event)" class="ma-1" icon="mdi-arrow-up-bold-circle"></v-btn>
+  </div>
+
   <footer class="text-center pa-4">
     <p class="text-body-2">© {{ new Date().getFullYear() }} badricks-world.at | All rights reserved.</p>
   </footer>
