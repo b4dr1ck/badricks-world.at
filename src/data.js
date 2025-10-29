@@ -59,30 +59,192 @@ export const imgData = [
   { file: "phiBot.jpg", title: "Phi-Bot", description: "" },
   { file: "greenImp.jpg", title: "Cozy Bushy Green", description: "" },
   { file: "whiteCyborg.jpg", title: "Synthetic Pale", description: "" },
-  { file: "sunDevourer.jpg", title: "Sun Devourer", description: "" },
-  { file: "barAside.jpg", title: "Bar Aside", description: "" },
-  { file: "psychoGirls_all.jpg", title: "My Little Girls", description: "" },
-  { file: "psychoGirl.jpg", title: "Insane Madeleine", description: "" },
-  { file: "mAz.jpg", title: "Can I Keep him, Mom?", description: "" },
-  { file: "djMike_v1.4.jpg", title: "Groove Monsters", description: "" },
-  { file: "sculptured.jpg", title: "Sculptured", description: "" },
-  { file: "Stairs.jpg", title: "Punish The Innocent", description: "" },
-  { file: "Mage.jpg", title: "The Mage Apprentice", description: "" },
-  { file: "Street.jpg", title: "Attention! High Voltage", description: "" },
-  { file: "shout.jpg", title: "Post Light", description: "" },
-  { file: "fleshmountains.jpg", title: "Carnal Path", description: "" },
-  { file: "beautiful.jpg", title: "The Pretty Ones", description: "" },
-  { file: "angelEyes.jpg", title: "Eyes Of A Fallen Angel", description: "" },
-  { file: "necro.jpg", title: "Ipasou", description: "" },
-  { file: "7sins.jpg", title: "Sins", description: "" },
-  { file: "ugly.jpg", title: "Aren't We Beautiful?", description: "" },
-  { file: "planets.jpg", title: "Draining Planets", description: "" },
-  { file: "bridge2.jpg", title: "The Bridge", description: "" },
-  { 
-    file: "landescape.jpg", 
-    title: "Foreign Landescape", 
-    description: 
-    "" },
+  {
+    file: "sunDevourer.jpg",
+    title: "Sun Devourer",
+    description:
+      "A surreal artwork showing a man devouring the sun. " +
+      "Whereby the guy is not really devouring it, but more like removes the surface of the sun with his hands. " +
+      "It's similar to the 'Draining Planets' artwork I made earlier. " +
+      "For the guy I used a photo reference of myself. " +
+      "The idea behind this picture is maybe to show the destructive power of humans " +
+      "and how we are consuming the resources of our planet a little bit too eagerly. ",
+  },
+  {
+    file: "barAside.jpg",
+    title: "Bar Aside",
+    description:
+      "The original title was 'Yet Another', but I changed it to 'Bar Aside' later. " +
+      "It's definitely a reference to the 'Stranger In A Strange Land' cover by Iron Maiden, which is one of my favorite album covers. " +
+      "The picture shows a bar scene in an otherworldly setting with some strange creatures drinking and socializing. " +
+      "I put a lot of fun-stuff again in there. Can't mention all of them. " +
+      "It took me quite a while to finish it, but I am still happy with the result. ",
+  },
+  {
+    file: "psychoGirls_all.jpg",
+    title: "My Little Girls",
+    description:
+      "A collection of the psycho girls. I liked the idea so much that I was motivated enough to create several of them. " +
+      "This one shows 'Insane Madeleine' again and some other girls. Among them are also a ballet-dancer girl, and an arsonist girl. " +
+      "Maybe someday I will recreate this picture an add some more of them. ",
+  },
+  {
+    file: "psychoGirl.jpg",
+    title: "Insane Madeleine",
+    description:
+      "Another psycho girl with the name 'Insane Madeleine' is pictured here. " +
+      "I also like the name 'PsychoBeth', but never used it yet. " +
+      "She is wearing a t-shirt which is a reference to the band 'Fever Ray'. ",
+  },
+  {
+    file: "mAz.jpg",
+    title: "Can I Keep him, Mom?",
+    description:
+      "One picture of the series 'Psycho Girls'. " +
+      "It's about young girls with psychotic tendencies painted in a comic-like style. " +
+      "This one is a girl who found a zombie and wants to keep him as a pet or something.",
+  },
+  {
+    file: "djMike_v1.4.jpg",
+    title: "Groove Monsters",
+    description:
+      "An album cover I made for a colleague of mine who is a DJ (greetings!). " +
+      "He asked to to create a cover with some 'monsters' coming out of a speaker and this is the result. ",
+  },
+  {
+    file: "sculptured.jpg",
+    title: "Sculptured",
+    description:
+      "Started with a random doodle and then developed it further into this sculpture-like figure. " +
+      "I can't say much about the meaning of this picture, it just came out that way and I still like it.",
+  },
+  {
+    file: "Stairs.jpg",
+    title: "Punish The Innocent",
+    description:
+      "The scenery I first created in a 3d program to get the right perspective and lighting." +
+      "Then I used that as a base for the painting in photoshop." +
+      "The idea was to make a child crying near the stairs, while a shadow appears from the stairs that leads down to the basement." +
+      "The picture was more an exercise to get the lighting and perspective right, but I think it worked out quite well." +
+      "On the walls you see some pictures. One of them shows a scene from Stanley Kubrick's 'The Shining', one of my favorite movies.",
+  },
+  {
+    file: "Mage.jpg",
+    title: "The Mage Apprentice",
+    description:
+      "It's just a selfportrait of me as a young mage apprentice. " +
+      "Pretty much my first adempt to paint myself digitally. " +
+      "It was a fun experience to paint myself as a mage. " +
+      "An alternative title of the picture is 'Hush' because the mage is telling you to be quiet. " +
+      "And 'Hush' is also the title of a song by TOOL, one of my favorite bands.",
+  },
+  {
+    file: "Street.jpg",
+    title: "Attention! High Voltage",
+    description:
+      "This was a funny project. When I went home from work one day I thought about what would happen " +
+      "if a big demon runs through the streets? Would he strungle with the electric cables and street lights? " +
+      "I took a photo of an empty street near my home and started to paint the demon into it. " +
+      "The picture made a lot of fun and I put a lot of funny details in there, you have to find for yourself. " +
+      "I like the background a lot, but the demon could be better painted I think." +
+      "All in all a nice piece I think. I should often use real photo references for my backgrounds.",
+  },
+  {
+    file: "shout.jpg",
+    title: "Post Light",
+    description:
+      "A picture with a distinct light source that illuminates the character's from above." +
+      "The character is shouting towards the light, while a corpse lies at his feet." +
+      "The light-setting reminds a bit of the older IRON MAIDEN album covers, which is always a good inspiration for me." +
+      "On the floor lies a comic book about 'Spoof', a character I created in my early teens." +
+      "The empty bottle next to the corpse reads 'ZomPiss', a fictional label I created for a " +
+      "comic series about zombies times ago. I often use these little easter eggs in my artworks.",
+  },
+  {
+    file: "fleshmountains.jpg",
+    title: "Carnal Path",
+    description:
+      "Similar to my 'foreign landescape' artwork, this picture depicts a surreal landscape made of flesh and skin-like structures. " +
+      "It started with some random doodles and shapes and resulted in this with the nice title 'Carnal Path'. ",
+  },
+  {
+    file: "beautiful.jpg",
+    title: "The Pretty Ones",
+    description:
+      "I started with one face and was motivated to add more faces until I had a whole group of them. " +
+      "It's inspired by H.R Giger's and Silent Hill's aesthetic. " +
+      "The first one is a typical face I often use with a cleft lip and a bald head. " +
+      "The second is kind of a cyborg with some mechanical parts. " +
+      "The third face is a demonic one with horns and sharp teeth. " +
+      "The fourth reminds a lot of a silent hill nurse with stitched face parts. " +
+      "The fifth is just a fat one with tumors and pimples. " +
+      "The sixth has some metal parts in his face to spread open the mouth. " +
+      "The seventh creature is a insect-like one with big eyes and antennae. " +
+      "The last one is a old-looking face with eyes that have multiple pupils. " +
+      "All in all - pretty guys, aren't they? :)",
+  },
+  {
+    file: "angelEyes.jpg",
+    title: "Eyes Of A Fallen Angel",
+    description: "",
+  },
+  {
+    file: "necro.jpg",
+    title: "Ipasou",
+    description:
+      "It's a picture about a necromancer called 'Ipasou'. " +
+      "The name 'Ipasou' is a acronym for 'I Put A Spell On You', which is also the title of a famous song by Screamin' Jay Hawkins " +
+      "and also has a Marilyn Manson cover version. " +
+      "I always took the name for all kind of magic-users in video games and RPGs. " +
+      "There is also a bigger story behind this character, I developed over the years, but I won't tell it here. ",
+  },
+  {
+    file: "7sins.jpg",
+    title: "Sins",
+    description:
+      "I want to make a picture where you can see all seven deadly sins in one image made by a single character. " +
+      "It's not excactly what I had in mind first, but it still works I think. " +
+      "I was always fascinated by the concept of the seven deadly sins and how they can be represented visually, " +
+      "even though I'm not such a religious person. :)" +
+      "The figures look a bit strange, but it's an older work of mine and so I keep it as it is.",
+  },
+  {
+    file: "ugly.jpg",
+    title: "Aren't We Beautiful?",
+    description:
+      "It's maybe a statement about something like 'Hatred makes ugly'. " +
+      "Maybe it's also just to provoke the viewers and flipping the bird to censorship. " +
+      "The idea for this face came from a random doodle I made while watching a movie. " +
+      "I liked the expression and so I developed it further into this artwork. " +
+      "The eye with the multiple pupils you see often in my artworks and is inspired by Cam De Leon's TOOL Eye'",
+  },
+  {
+    file: "planets.jpg",
+    title: "Draining Planets",
+    description:
+      "This one was a request from a colleague of mine (thank you Franz!). He asked me to do a picture with a planet " +
+      "draining the surface of other planets. I liked that idea and so I made this picture. " +
+      "I don't know what my colleague did with it, but he said that he liked it. " +
+      "As an 'easter egg' I put a Jedi falling down in the background on the right side. ",
+  },
+  {
+    file: "bridge2.jpg",
+    title: "The Bridge",
+    description:
+      "The idea behind this one was to create an idylic fantasy landscape with a bridge where a young girl " +
+      "and a troll holding hands standing in the middle. " +
+      "It took me a while to finish the landscape and so I had no patience left for the characters. " +
+      "There is a version with the troll and the girl but I don't like that one that much and so I left them out. " +
+      "Pitty, but maybe someday I will finish it properly.",
+  },
+  {
+    file: "landescape.jpg",
+    title: "Foreign Landescape",
+    description:
+      "I made this picture after I left a party from my cousin (who passed away 2025) prematurely. " +
+      "It was the only invitation I got from her and so I kept that in mind and associate that with the picture. " +
+      "There was no real idea behind this work, just doodling around and the result was this surreal landscape",
+  },
   {
     file: "puke.jpg",
     title: "Conema (Commercial Enema)",
