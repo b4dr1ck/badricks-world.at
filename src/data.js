@@ -51,14 +51,72 @@ export const imgData = [
   { file: "cyborgReaper.jpg", title: "I Got Souls", description: "" },
   { file: "conjured.jpg", title: "Cold Impression", description: "" },
   { file: "rockStar.jpg", title: "Hit The Tone", description: "" },
-  { file: "xMess.jpg", title: "X-Mess", description: "" },
-  { file: "twoSwords.jpg", title: "Two Swords", description: "" },
-  { file: "heIsTurningBlue.jpg", title: "He Is Turning Blue", description: "" },
-  { file: "toothFairy.jpg", title: "Terry The Fairy", description: "" },
-  { file: "yolandi.jpg", title: "Freeky", description: "" },
-  { file: "phiBot.jpg", title: "Phi-Bot", description: "" },
-  { file: "greenImp.jpg", title: "Cozy Bushy Green", description: "" },
-  { file: "whiteCyborg.jpg", title: "Synthetic Pale", description: "" },
+  { 
+    file: "xMess.jpg", 
+    title: "X-Mess", 
+    description: 
+    "The picture was a greeting card I made for Christmas. " +
+    "The idea of this was a boy who tries to steal the presents from Santa Claus' sleigh. " +
+    "Santa is waiting for him, but the boy doesn't realize that. " +
+    "Most people who saw this picture thought that the boy is just helping Santa to carry the presents. " +
+    "That's the funny thing about art - everyone can interpret it in their own way. "
+   },
+  {
+    file: "twoSwords.jpg",
+    title: "Two Swords",
+    description:
+      "Inspired by 'Andariel' from Diablo II, I wanted to create a knight wearing a hood " +
+      "where the face is hidden in shadows. " +
+      "There is also another version of this image where he also wears a cloak, but I was not too happy with it. " +
+      "Instead of repainting it, I just left it out. ",
+  },
+  {
+    file: "heIsTurningBlue.jpg",
+    title: "He Is Turning Blue",
+    description:
+      "'Call an optimist, she's turning blue!' - a quote from an 'A Perfect Circle' song. " +
+      "It has nothing to do with this picture, but the title came into my head as I painted this one." +
+      "It first was just a rough sketch and then I put some colors on it. " +
+      "I don't know why I still have it on my page, but I can't split with it. :)",
+  },
+  {
+    file: "toothFairy.jpg",
+    title: "Terry The Fairy",
+    description:
+      "Again a comic-like psycho girl character that shows Terry the Tooth Fairy. " +
+      "She is someone who steals teeth from children and give them no money in return - just pain." +
+      "I like the idea of a dark version of the tooth fairy and so I created this character. " +
+      "The hair style of Terry is inspired by Yolandi Visser from Die Antwoord.",
+  },
+  {
+    file: "yolandi.jpg",
+    title: "Freeky",
+    description:
+      "It's a scene from the music video 'I Fink U Freeky' by Die Antwoord. " +
+      "At this time I heard the band alot and was fascinated by their style and music. " +
+      "So I painted this picture of Yolandi Visser, one of the two band members. ",
+  },
+  {
+    file: "phiBot.jpg",
+    title: "Phi-Bot",
+    description: "It's kind of mascot robot character I created for my job. Just fun-stuff...",
+  },
+  {
+    file: "greenImp.jpg",
+    title: "Cozy Bushy Green",
+    description:
+      "I wanted to make a green cute looking imp sitting on the ground and mused about life. " +
+      "I also wanted to try to make a bushy looking fur texture and so this picture was born. ",
+  },
+  {
+    file: "whiteCyborg.jpg",
+    title: "Synthetic Pale",
+    description:
+      "It's a speedpaint I made. Speedpaint means in this context that I didn't planed the picture beforehand, " +
+      "and didn't made a sketch or drawing first, which is my usual workflow. " +
+      "I just used a colored brush and started to paint directly in my preferred software. " +
+      "Then I put a stupid title on it and called it done. :D",
+  },
   {
     file: "sunDevourer.jpg",
     title: "Sun Devourer",
