@@ -30,42 +30,209 @@ export const imgData = [
   { file: "girlAndMonstersX.jpg", title: "Me And My Monsters", description: "" },
   { file: "goForAWalk.jpg", title: "Go For A Walk", description: "" },
   { file: "fatSoldier.jpg", title: "Fat Soldier", description: "" },
-  { file: "blackGirl.jpg", title: "Let It Pee", description: "" },
-  { file: "cypork.jpg", title: "CyPork", description: "" },
-  { file: "fairy.jpg", title: "Raise", description: "" },
-  { file: "surrealWall.jpg", title: "Wall Of Insanity", description: "" },
-  { file: "priest.jpg", title: "God Is With You", description: "" },
-  { file: "phone.jpg", title: "Always Online", description: "" },
-  { file: "spell.jpg", title: "The Spell", description: "" },
-  { file: "violentine.jpg", title: "Happy Violentine's Day", description: "" },
-  { file: "creep.jpg", title: "Freedom Of Expression", description: "" },
-  { file: "maggots.jpg", title: "King Of Maggots", description: "" },
-  { file: "spikehead.jpg", title: "Spikehead", description: "" },
-  { file: "cyborgReaper2a.jpg", title: "Impending Mischief", description: "" },
-  { file: "zombies.jpg", title: "Bad Situation", description: "" },
-  { file: "lovers.jpg", title: "Empty Lovers", description: "" },
-  { file: "antlersface.jpg", title: "Antlered Face", description: "" },
-  { file: "fireball.jpg", title: "Small Miracle", description: "" },
-  { file: "hair.jpg", title: "I Comb Your Hair", description: "" },
-  { file: "musick.jpg", title: "Musick", description: "" },
-  { file: "cyborgReaper.jpg", title: "I Got Souls", description: "" },
-  { file: "conjured.jpg", title: "Cold Impression", description: "" },
-  { file: "rockStar.jpg", title: "Hit The Tone", description: "" },
-  { 
-    file: "xMess.jpg", 
-    title: "X-Mess", 
-    description: 
-    "The picture was a greeting card I made for Christmas. " +
-    "The idea of this was a boy who tries to steal the presents from Santa Claus' sleigh. " +
-    "Santa is waiting for him, but the boy doesn't realize that. " +
-    "Most people who saw this picture thought that the boy is just helping Santa to carry the presents. " +
-    "That's the funny thing about art - everyone can interpret it in their own way. "
-   },
+  {
+    file: "blackGirl.jpg",
+    title: "Let It Pee",
+    description:
+      "It's a homage to 'The Exorcist' movie, where Regan is peeing herself while a party is going on. " +
+      "The scene and the movie itself is definitely not funny but my picture has at least a funny title :)",
+  },
+  {
+    file: "cypork.jpg",
+    title: "CyPork",
+    description:
+      "It was a pun we had while chatting in our office - pork and cyborg combined to CyPork. " +
+      "Suddenly a picture appeared in my mind of a pig-like cyborg creature. " +
+      "I used an other technique for the rendering of this. It's more comic-like with sharp outlines and cell-shading. ",
+  },
+  {
+    file: "fairy.jpg",
+    title: "Raise",
+    description:
+      "A picture I created for my mom's birthday. " +
+      "It's quite unusual for me to create something 'beautiful'." +
+      "My basic idea was to create a beautiful fairy sitting in the forest while " +
+      "animals from the forest spy on her hidden behind a rock in the foreground. " +
+      "It was a funny experience to paint all this animals by using photo references. " +
+      "It was a pain to paint all the grass, but I think it was worth the effort. ",
+  },
+  {
+    file: "surrealWall.jpg",
+    title: "Wall Of Insanity",
+    description:
+      "It started with some random surreal looking faces I doodled on my tablet. " +
+      "I worked on it further and added more faces until I had this wall of insanity. " +
+      "The meaning behind this picture has something to do with the chaos in our minds " +
+      "and the borderline between sanity and insanity. ",
+  },
+  {
+    file: "priest.jpg",
+    title: "God Is With You",
+    description:
+      "It's a critique of the child abuse scandals in the catholic church showing a creepy priest " +
+      "putting his hand on the shoulder of two young chidren. " +
+      "The children look scared and uncomfortable, while the priest has a sinister smile on his face. " +
+      "The title 'God Is With You' is meant to be ironic, as the priest is clearly not a good representative of god. ",
+  },
+  {
+    file: "phone.jpg",
+    title: "Always Online",
+    description:
+      "When i was going home from work one day, I saw a girl who was so focused on her phone " +
+      "that she forgot to push the 'open' button for the bus door and the bus drove away without her. " +
+      "This scene inspired me to create this artwork called 'Always Online'." +
+      "The picture is a bit more dramatic, because the girl in this work is ignoring a truck oncoming her way. " +
+      "The girl is also pregnant and drives a stroller with her baby while she looks at her phone.",
+  },
+  {
+    file: "spell.jpg",
+    title: "The Spell",
+    description:
+      "As a kid I collected a series of books called 'The Ancestral Trail' which were fantasy adventure stories. " +
+      "This picture is inspired by a picture I had in my mind from one of those books. " +
+      "It shows an old mage preparing a spell while kneeling on the ground in front of a magical book." +
+      "Maybe he is also loosing his energy while doing so, as he is quite old and frail. " +
+      "The text on the book says 'All work and no play makes Jack a dull boy', which is a reference to the movie 'The Shining'.",
+  },
+  {
+    file: "violentine.jpg",
+    title: "Happy Violentine's Day",
+    description:
+      "A picture I made for Valentine's Day. " +
+      "It's about an ugly looking monster who wants to give literally his heart to a girl. " +
+      "On the right corner on the ground lies Amor the angel of love shot by his own arrow. " +
+      "The picture is about a love that is not reciprocated and the pain that comes with it. ",
+  },
+  {
+    file: "creep.jpg",
+    title: "Freedom Of Expression",
+    description:
+      "The colors and lighting and the figure at all is inspired by the Silent Hill games as you easily recognize. " +
+      "The idea to call it 'Freedom Of Expression' is because the character can't express himself - ironically.",
+  },
+  {
+    file: "maggots.jpg",
+    title: "King Of Maggots",
+    description:
+      "I think my intention with this picture was just to create a typical jesus-like figure hanging on the cross. " +
+      "I put this classic religious imagery in a more sci-fi setting, inspired by Shodan from the 'System Shock' video game series. " +
+      "'King Of Maggots' is a derogatory term in this context and is maybe just a provocation. " +
+      "I like to offend the religious sensibilities of people sometimes. :P",
+  },
+  {
+    file: "spikehead.jpg",
+    title: "Spikehead",
+    description:
+      "I often make pictures where I just draw a face and see what comes out of it. " +
+      "This one is one of those faces I just doodled and then developed further into this artwork. ",
+  },
+  {
+    file: "cyborgReaper2a.jpg",
+    title: "Impending Mischief",
+    description:
+      "Another version of my cyborg reaper character. " +
+      "The lighting and again the texture of the leather coat were the main focus of this artwork. " +
+      "The simple red background with the futuristic cityscape silhouette gives the picture a distinct mood. ",
+  },
+  {
+    file: "zombies.jpg",
+    title: "Bad Situation",
+    description:
+      "As a big fan of 'The Walking Dead' I wanted to make a picture with zombies shown in the ego-perspective. " +
+      "It's not really what I had in mind first, but I like it anyway. " +
+      "For the person who gets attacked I used a photo reference of myself. ",
+  },
+  {
+    file: "lovers.jpg",
+    title: "Empty Lovers",
+    description:
+      "I liked this one so much that I put it on my wall." +
+      "It started with a drawing of a face wearing some kind of gasmask and then with a second face next to it." +
+      "The faces looked like a heart shape and so I developed the idea further into this artwork." +
+      "It has some surreal elements like the tentacle-like hands entwined around each other, " +
+      "which I just made because I couldn't get the hands right." +
+      "All in all the picture is about two lovers who are emotionally empty and just lying next " +
+      "to each other forever and kept alive by some kind of life support system.",
+  },
+  {
+    file: "antlersface.jpg",
+    title: "Antlered Face",
+    description:
+      "I got a comment on deviantart that this looks like a mix between an IRON MAIDEN cover and Tool. " +
+      "Yeah, I can't deny that - those are two of my favorite bands. ;)",
+  },
+  {
+    file: "fireball.jpg",
+    title: "Small Miracle",
+    description:
+      "I wanted to create a mage holding a fireball in his hand with a photo reference of myself. " +
+      "This is what came out of it. :) " +
+      "It looks quite nice I think and the lighting works quite well too. " +
+      "I also used this picture as a banner image for my website some time ago. ",
+  },
+  {
+    file: "hair.jpg",
+    title: "I Comb Your Hair",
+    description:
+      "I'm not quite sure but I think I had a dream about this picture. " +
+      "It shows a zombie-like old woman combing the hair of a young girl. " +
+      "The girl seems to be hypnotized or in a trance-like state and has her face hidden behind her long hair. " +
+      "The idea of the girl with the long hair came from several horror characters like 'Samara' from 'The Ring' or " +
+      "'Alma Wade' from the 'F.E.A.R.' video game series." +
+      "The title is a reference to the song 'Marble House' from 'The Knife'",
+  },
+  {
+    file: "musick.jpg",
+    title: "Musick",
+    description:
+      "A picture that shows my love for music. It could also work as an album cover for a rock or metal band. " +
+      "It's a common concept of mine to create artworks where you see tons of demons in one image. " +
+      "Sometimes I call this 'demon wall' and is a method to practice different faces and expressions. ",
+  },
+  {
+    file: "cyborgReaper.jpg",
+    title: "I Got Souls",
+    description:
+      "This cyborg-like grim reaper, sitting on his throne and waiting for his next victims, " +
+      "was just an exercise to practice lighting and the texture of a leather coat. " +
+      "I liked the idea of this guy so much that I created it in several versions later. " +
+      "He is wearing a mask that covers his face in pure blackness, and also a leather trench coat. " +
+      "Underneath his coat you see his mechanical ribcage holding a glowing blue core inside, " +
+      "which is a cage for the souls he collected. ",
+  },
+  {
+    file: "conjured.jpg",
+    title: "Cold Impression",
+    description:
+      "One of my favorite works. The basic idea was to create some kind of conjurer standing on a mountain peak " +
+      "and summoning a demon that rises from behind him. " +
+      "This one is now a bit diffrent from my usual idea of the picture, but I still like it a lot. " +
+      "It shows a cyborg-like figure (or maybe a sith lord?) who is preparing to a fight and a big demon appearing behind him. " +
+      "All is set in a cold and snowy environment, which gives the picture a distinct mood and was the reason for the title 'Cold Impression'. ",
+  },
+  {
+    file: "rockStar.jpg",
+    title: "Hit The Tone",
+    description:
+      "This one could also be a cover for a rock or metal album. " +
+      "Again I was inspired by some Iron Maiden album covers and did this one for fun. " +
+      "There is also a colored version of this picture, but I prefer this black and purple one. ",
+  },
+  {
+    file: "xMess.jpg",
+    title: "X-Mess",
+    description:
+      "The picture was a greeting card I made for Christmas. " +
+      "The idea of this was a boy who tries to steal the presents from Santa Claus' sleigh. " +
+      "Santa is waiting for him, but the boy doesn't realize that. " +
+      "Most people who saw this picture thought that the boy is just helping Santa to carry the presents. " +
+      "That's the funny thing about art - everyone can interpret it in their own way. ",
+  },
   {
     file: "twoSwords.jpg",
     title: "Two Swords",
     description:
-      "Inspired by 'Andariel' from Diablo II, I wanted to create a knight wearing a hood " +
+      "Inspired by 'Tyrael' from Diablo II, I wanted to create a knight wearing a hood " +
       "where the face is hidden in shadows. " +
       "There is also another version of this image where he also wears a cloak, but I was not too happy with it. " +
       "Instead of repainting it, I just left it out. ",
