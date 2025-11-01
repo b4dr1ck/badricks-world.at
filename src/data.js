@@ -1,5 +1,6 @@
 export const imgData = [
-  { file: "rapidRabbit.png", title: "Rapid Rabbit", description: "adsdad" },
+  { file: "greenFaces.png", title: "Green Faces", description: "" },
+  { file: "rapidRabbit.png", title: "Rapid Rabbit", description: "" },
   { file: "unicorn.png", title: "Last Unicorn", description: "" },
   { file: "back.png", title: "I Am Back", description: "" },
   { file: "hood.jpg", title: "Hooded", description: "" },
