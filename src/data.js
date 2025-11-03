@@ -28,9 +28,30 @@ export const imgData = [
   { file: "hug.jpg", title: "Hug The Perversion", description: "" },
   { file: "longVisage.jpg", title: "Long Visage", description: "" },
   { file: "cyborgReaper3.jpg", title: "Ready", description: "" },
-  { file: "girlAndMonstersX.jpg", title: "Me And My Monsters", description: "" },
-  { file: "goForAWalk.jpg", title: "Go For A Walk", description: "" },
-  { file: "fatSoldier.jpg", title: "Fat Soldier", description: "" },
+  { 
+    file: "girlAndMonstersX.jpg", 
+    title: "Me And My Monsters", 
+    description: 
+      "The background of this picture is again one of my 'demon walls' I often paint when I'm bored. " +
+      "The girl in the foreground was a part of an other piture which I combined with this one. " +
+      "If you are bored you can try to count all the monsters in the background or try to find 'Homer Simpson' hidden in there. :)",
+  },
+  { 
+    file: "goForAWalk.jpg", 
+    title: "Go For A Walk", 
+    description: 
+    "Similar to the 'Fat Soldier' artwork, this picture is a tribute to Jean 'Moebius' Giraud. " +
+    "It shows an alien go walkies with his 'dog' in a surreal landscape. " +
+    "I also used this comic-like style for the rendering, like I did in the 'Fat Soldier' picture. ",
+  },
+  {
+    file: "fatSoldier.jpg",
+    title: "Fat Soldier",
+    description:
+      "It's one of the pictures I made as a tribute to Jean 'Moebius' Giraud. " +
+      "I always liked his unique style and the way he created his characters. " +
+      "This one is about a fat soldier standing in a surreal landscape holding his weapon and staring into the distance. ",
+  },
   {
     file: "blackGirl.jpg",
     title: "Let It Pee",
