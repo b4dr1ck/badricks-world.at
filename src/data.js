@@ -19,15 +19,37 @@ export const imgData = [
   { file: "cracked_lips.png", title: "A Cracked Smile", description: "" },
   { file: "human_land.png", title: "Pillars of Humiliation", description: "" },
   { file: "dead_god.jpg", title: "Rather Than Server In Heaven", description: "" },
-  { file: "afterHours.jpg", title: "After Hours", description: "" },
-  { file: "trout_on_ktm.jpg", title: "Trout On A Bike", description: "" },
-  { file: "bloodQueen.jpg", title: "Blood Queen", description: "" },
+  {
+    file: "afterHours.jpg",
+    title: "After Hours",
+    description:
+      "One of my favorite works. It shows a guy being supported to walk by two women " +
+      "because he probably had a bit too much to drink. A familiar situation. :D" +
+      "I also put a lot of funny details in there, like the 'Powerpuff Girls' T-shirt one of the women is wearing. ",
+  },
+  {
+    file: "trout_on_ktm.jpg",
+    title: "Trout On A Bike",
+    description:
+      "This one was a request of a colleague of mine. The idea was to put a trout fish on a KTM motorbike. " +
+      "The colleague drives a KTM bike and lives in the 'Forellenweg' (trout way) street. " +
+      "I hated to paint the motorbike, beacause I think they are boring and I am not a big fan of vehicles anyway. " +
+      "I used a reference photo of a KTM bike to get the details right. ",
+  },
+  {
+    file: "bloodQueen.jpg",
+    title: "Blood Queen",
+    description:
+      "I wanted to make a pale face with blood, set in a white background." +
+      "The work looks quite diffrent then I had it in mind first, but I like it anyway. " +
+      "So the 'Blood Queen' was born.",
+  },
   {
     file: "pokemongo.jpg",
     title: "PokeMongo",
     description:
       "It's about the hype around the mobile game 'Pokemon Go' which was released in 2016. " +
-      "Maybe it's not politically correct :P, but who cares. I don't want to harm anyone with this picture - just fun!",
+      "Maybe it's not politically correct, but who cares :P. I don't want to harm anyone with this picture - just fun!",
   },
   {
     file: "bones.jpg",
