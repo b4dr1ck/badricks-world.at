@@ -22,27 +22,69 @@ export const imgData = [
   { file: "afterHours.jpg", title: "After Hours", description: "" },
   { file: "trout_on_ktm.jpg", title: "Trout On A Bike", description: "" },
   { file: "bloodQueen.jpg", title: "Blood Queen", description: "" },
-  { file: "pokemongo.jpg", title: "PokeMongo", description: "" },
-  { file: "bones.jpg", title: "Lie With Your Bones", description: "" },
-  { file: "giveMeUrHand.jpg", title: "Give Me Your Hand", description: "" },
-  { file: "hug.jpg", title: "Hug The Perversion", description: "" },
-  { file: "longVisage.jpg", title: "Long Visage", description: "" },
-  { file: "cyborgReaper3.jpg", title: "Ready", description: "" },
-  { 
-    file: "girlAndMonstersX.jpg", 
-    title: "Me And My Monsters", 
-    description: 
+  {
+    file: "pokemongo.jpg",
+    title: "PokeMongo",
+    description:
+      "It's about the hype around the mobile game 'Pokemon Go' which was released in 2016. " +
+      "Maybe it's not politically correct :P, but who cares. I don't want to harm anyone with this picture - just fun!",
+  },
+  {
+    file: "bones.jpg",
+    title: "Lie With Your Bones",
+    description:
+      "As a fan of the band 'In this Moment' and the song 'Bones' I came up with this idea. " +
+      "The picture was more an exercise to practice the anatomy of the human body but has also a meaning behind it. " +
+      "It's about necrophilia and the desire to be with someone even after death. " +
+      "'I wanna lie with your bones forever' is a lyric from the song",
+  },
+  {
+    file: "giveMeUrHand.jpg",
+    title: "Give Me Your Hand",
+    description:
+      "I used a new technique for this one, where I first use a black and white color for the tones and try to add colors later. " +
+      "I didn't get it to work the way I wanted and so it stayed a black and white picture which I later recolored in a red tone. " +
+      "The idea of the pciture was to create a big magical creature reaching out his hand to a small fragile human girl. ",
+  },
+  {
+    file: "hug.jpg",
+    title: "Hug The Perversion",
+    description:
+      "I first created the guy with the peeled-off face without any further idea. " +
+      "Then I worked further on it and added another guy hugging him and putting some other surreal elements in there. " +
+      "It's a surreal picture with no real meaning behind it. Just some fun-stuff. " +
+      "Maybe it's about 'Golden Shower' which explains the yellowish colors I used for this image. :)",
+  },
+  {
+    file: "longVisage.jpg",
+    title: "Long Visage",
+    description:
+      "I dont't know why I created this one. I guess it was another exercise to practice the anatomy of the body. " +
+      "It's a fantasy-styled character with an elongated face and a long neck. ",
+  },
+  {
+    file: "cyborgReaper3.jpg",
+    title: "Ready",
+    description:
+      "Another picture of the cyborg reaper character I created earlier. I actually have no name for this guy. " +
+      "For this one I used a photo reference of myself to get the pose right. " +
+      "I dont't really like the pose of the sword he is holding, but I kept it as it is. ",
+  },
+  {
+    file: "girlAndMonstersX.jpg",
+    title: "Me And My Monsters",
+    description:
       "The background of this picture is again one of my 'demon walls' I often paint when I'm bored. " +
       "The girl in the foreground was a part of an other piture which I combined with this one. " +
       "If you are bored you can try to count all the monsters in the background or try to find 'Homer Simpson' hidden in there. :)",
   },
-  { 
-    file: "goForAWalk.jpg", 
-    title: "Go For A Walk", 
-    description: 
-    "Similar to the 'Fat Soldier' artwork, this picture is a tribute to Jean 'Moebius' Giraud. " +
-    "It shows an alien go walkies with his 'dog' in a surreal landscape. " +
-    "I also used this comic-like style for the rendering, like I did in the 'Fat Soldier' picture. ",
+  {
+    file: "goForAWalk.jpg",
+    title: "Go For A Walk",
+    description:
+      "Similar to the 'Fat Soldier' artwork, this picture is a tribute to Jean 'Moebius' Giraud. " +
+      "It shows an alien go walkies with his 'dog' in a surreal landscape. " +
+      "I also used this comic-like style for the rendering, like I did in the 'Fat Soldier' picture. ",
   },
   {
     file: "fatSoldier.jpg",
