@@ -8,17 +8,97 @@ export const imgData = [
   { file: "crackedFaces.png", title: "Fraction Agency", description: "" },
   { file: "sweets.png", title: "Sweets For The Sweet", description: "" },
   { file: "concrete_melting.png", title: "Melting Concrete", description: "" },
-  { file: "hypocrites.png", title: "HypoChrist", description: "" },
-  { file: "hose_face.png", title: "Hose Face", description: "" },
-  { file: "turbine.png", title: "Comprehension", description: "" },
-  { file: "comix_collection.png", title: "The Good Old Times", description: "" },
-  { file: "time.png", title: "Time", description: "" },
-  { file: "cannibal.png", title: "Ready When You Are", description: "" },
-  { file: "food_chain.png", title: "Cross Dependencies", description: "" },
-  { file: "outta_my_head.png", title: "Outta My Head", description: "" },
-  { file: "cracked_lips.png", title: "A Cracked Smile", description: "" },
-  { file: "human_land.png", title: "Pillars of Humiliation", description: "" },
-  { file: "dead_god.jpg", title: "Rather Than Server In Heaven", description: "" },
+  {
+    file: "hypocrites.png",
+    title: "HypoChrist",
+    description:
+      "I wanted to make ugly looking faces that are obsessed with religion and god holding a cross. " +
+      "It shows the hypocrisy of people who use religion as an excuse for anything they do and try to hide " +
+      "their true nature behind a mask of piety. ",
+  },
+  {
+    file: "hose_face.png",
+    title: "Hose Face",
+    description:
+      "Another 'demon wall' with the focus on the face in the foreground which is the reason for the title. " +
+      "The pciture is made in a greenish color scheme which gives it a distinct mood and atmosphere. " +
+      "It reminds also a bit of the bio-mechanical style of H.R. Giger, one of my favorite artists. ",
+  },
+  {
+    file: "turbine.png",
+    title: "Comprehension",
+    description:
+      "This picture was a request of a colleague. He asked me to do an image about comprehension and team spirit. " +
+      "I made this work in my style which is not exactly what he wanted, but he liked it anyway. " +
+      "I guess he never used this picture for any purpose, but it was fun to create it. " +
+      "The idea is that two robots keep their flying vehicle in the air by working together ",
+  },
+  {
+    file: "comix_collection.png",
+    title: "The Good Old Times",
+    description:
+      "This is a collection of some of my comic i created in my early teens. " +
+      "Some of them you can find in other pictures of mine as easter eggs and a reminder of the good old times. ",
+  },
+  {
+    file: "time.png",
+    title: "Time",
+    description: "The image shows the effect of time and the fact that everything is temporary. ",
+  },
+  {
+    file: "cannibal.png",
+    title: "Ready When You Are",
+    description:
+      "A picture about cannibalism. The idea came from 'The Game of Thrones' TV series. " +
+      "I liked the look of the cannibals and their scars on their faces from their ritualistic self-mutilation. " +
+      "So I created this picture showing a cannibal eating a human. " +
+      "It was fun to paint all the gut's and innards. :D." +
+      "The title is a reference to a line from the movie 'The Silence of the Lambs', where Hannibal Lecter says 'I'm ready when you are'.",
+  },
+  {
+    file: "food_chain.png",
+    title: "Circular Dependencies",
+    description:
+      "'Circular Dependencies' is a term from software development and batch deployment, which is part of my job. " +
+      "The picture shows a surreal food chain where each monster is eating another one in a circular manner. ",
+  },
+  {
+    file: "outta_my_head.png",
+    title: "Outta My Head",
+    description:
+      "This work is again on of the 'demon wall' series I often create. " +
+      "For this one I took a reference photo for the hunman-like figure in the foreground. " +
+      "The picture is about freeing your mind and paint all the demons out of your head. " +
+      "The background is the same picture as in my 'Me And My Monsters' artwork.",
+  },
+  {
+    file: "cracked_lips.png",
+    title: "A Cracked Smile",
+    description:
+      "The idea for the title came from the song 'Silent Shout' by 'The Knife'" +
+      "The picture is about my phobia of dental work and dentists in general. ",
+  },
+  {
+    file: "human_land.png",
+    title: "Pillars of Humiliation",
+    description:
+      "A surreal landscape. It started with the figure in the foreground " +
+      "that has a soft jaw hanging down and melting with the face of another figure. " +
+      "Then I put more figures in the background and created this strange land made of melting humans. " +
+      "The 'Melting Thing' is a bit inspired by Dali and also body horror movies like 'The Thing' or 'The Fly'. " +
+      "The deeper meaning of this picture you should find out by yourself.",
+  },
+  {
+    file: "dead_god.jpg",
+    title: "Rather Than Serve In Heaven",
+    description:
+      "Again a picture with a religious theme. It's about 'the devil' strangles 'god' with his own halo. " +
+      "The idea, I gues, I got from the song 'The Noose' by 'A Perfect Circle'." +
+      "The 'devil' has mutliple faces which all present one of the seven deadly sins. " +
+      "'God' is having a tattoo on his arm which says 'WWJD', which means 'What Would Jesus Do?'. Just ironic I guess. " +
+      "Somewhere in the background you can also see the 'Death Star' from Star Wars. :)" +
+      "Cool picture I think ;)",
+  },
   {
     file: "afterHours.jpg",
     title: "After Hours",
