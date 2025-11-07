@@ -1,13 +1,78 @@
 export const imgData = [
-  { file: "greenFaces.png", title: "Green Faces", description: "" },
-  { file: "rapidRabbit.png", title: "Rapid Rabbit", description: "" },
-  { file: "unicorn.png", title: "Last Unicorn", description: "" },
-  { file: "back.png", title: "I Am Back", description: "" },
-  { file: "hood.jpg", title: "Hooded", description: "" },
-  { file: "tree.png", title: "Tree of Life", description: "" },
-  { file: "crackedFaces.png", title: "Fraction Agency", description: "" },
-  { file: "sweets.png", title: "Sweets For The Sweet", description: "" },
-  { file: "concrete_melting.png", title: "Melting Concrete", description: "" },
+  {
+    file: "greenFaces.png",
+    title: "Green Faces",
+    description:
+      "As so often the picture started with some random doodles of a face. " +
+      "I liked the look and decided to put the same face in different expressions and poses. " +
+      "The eye is again similar to the 'tool eye' I used in some other pictures and also have as a tattoo on my arm. " +
+      "Nothing more to say about this one. Just some fun-stuff. :)",
+  },
+  {
+    file: "rapidRabbit.png",
+    title: "Rapid Rabbit",
+    description:
+      "I made some drawings of this killer rabbit before I came up with this one. " +
+      "At last I decided to make it more in a comic-style and created this artwork. " +
+      "It looks a bit like a cover of a comic book or graphic novel or maybe a design for a t-shirt. " +
+      "Then I put a witty title on it and called it done. :)",
+  },
+  {
+    file: "unicorn.png",
+    title: "Last Unicorn",
+    description:
+      "This was an idea from my girlfriend. She wanted to have a picture of a zombie unicorn. " +
+      "We used this picture also for a 'diamond painting', which is a kind of mosaic art.",
+  },
+  {
+    file: "back.png",
+    title: "I Am Back",
+    description:
+      "This was the first picture I created after a long break of digital painting. " +
+      "It also was the beginning of my new homepage I made with the vue.js framework. " +
+      "I use this picture as a banner image on my website and even on other platforms like Deviantart. " +
+      "For this picture I also used a new tablet, the Samsung Galaxy Tab, which I still use today for my paintings. ",
+  },
+  {
+    file: "hood.jpg",
+    title: "Hooded",
+    description:
+      "A 'demon wall' artwork with a laughing hooded figure in the foreground wearing a sweatshirt with the 'bad rick' logo on it. " +
+      "I don't use this logo anymore on my homepage, but back then I did. " +
+      "It was long the newest picture in my gallery because I had less time to create new artworks. ",
+  },
+  {
+    file: "tree.png",
+    title: "Tree of Life",
+    description: "A surreal interpretation about Adam and Eve and the Tree of Life. ",
+  },
+  {
+    file: "crackedFaces.png",
+    title: "Fraction Agency",
+    description:
+      "The face of the figure in the center I drawed in some other picture (which are not here in the gallery) already. " +
+      "I also used it as a character in a game I tried to develop some years ago, but never finished it. " +
+      "The artwork shows three guys in tuxedos wearing masks with cracked faces and diffrent emotions: neutral, happiness and sadness. " +
+      "If you look closely you can see a pixelated version of the 'cracked face' in right corner, which was the sprite I used in my game. ",
+  },
+  {
+    file: "sweets.png",
+    title: "Sweets For The Sweet",
+    description:
+      "The sujet of this picture is about children abuse. It shows a grotesque figure using his antennas " +
+      "to catch innocent children. It's a bit like the angler fish from the deep sea that uses a lure to attract prey. " +
+      "An alternative title was 'Candy Trap', even though there are no candies in the picture. " +
+      "It's more about the idea of luring children with sweets. ",
+  },
+  {
+    file: "concrete_melting.png",
+    title: "Melting Concrete",
+    description:
+      "The background of this image is from a photo I made during a hike on the 'Schwalbenmauer' (mountain in Austria) " +
+      "It was an exhausting hike despite the short distance, because the path was very steep and snowy and a snowstorm was coming up. " +
+      "The tour has nothing to do with the picture itself, but it always reminds me of this hike. " +
+      "The picture shows a surreal figure melting and frozen at the same time waiting on the peak of the mountain. ",
+  },
   {
     file: "hypocrites.png",
     title: "HypoChrist",
