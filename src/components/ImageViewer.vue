@@ -65,7 +65,7 @@ export default {
     </div>
     <div style="z-index: 300; width: 100%" class="position-absolute mt-15 overlay" v-if="showInfo">
       <h2 class="text-h2 text-left">{{ imgTitle }}</h2>
-      <p v-html="imgDesc" class="text-body-1 text-left mt-2"></p>
+      <p v-html="imgDesc" class="text-body-1 text-left mt-2 pa-2"></p>
     </div>
     <v-img
       height="100%"
