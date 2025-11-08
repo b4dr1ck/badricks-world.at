@@ -1,5 +1,13 @@
 export const imgData = [
   {
+    file:"cindyPede.png",
+    title: "CindyPede",
+    description:
+    "I wanted to make a 'Princess Of Centipede' picture. It's not really a princess, " +
+    "but a crazy looking girl with some centipedes which I named 'CindyPede'" + 
+    "The idea came up when I was talking to my girlfriend about my next picture I could draw."
+  },
+  {
     file: "greenFaces.png",
     title: "Green Faces",
     description:
