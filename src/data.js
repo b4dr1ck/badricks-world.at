@@ -1,11 +1,22 @@
 export const imgData = [
   {
-    file:"cindyPede.png",
+    file: "jack.png",
+    title: "Jack",
+    description:
+      "The name 'Jack' was my first idea because this guy is holding a 'Jack Daniels' bottle in his hand." +
+      "In this picture I left the pencil drawing and then created the fineline above" +
+      "I only used black and white for the figure, green for the eyes and some brownish color for the whiskey bottle." +
+      "I also wanted to make a city in the background, just drawn with a pencil and without any colors, " +
+      "but then I was a bit too lazy and just created a colored doodle that looks like shit. :) " +
+      "Maybe I will put some more affort into the background in the future.",
+  },
+  {
+    file: "cindyPede.png",
     title: "CindyPede",
     description:
-    "I wanted to make a 'Princess Of Centipede' picture. It's not really a princess, " +
-    "but a crazy looking girl with some centipedes which I named 'CindyPede'" + 
-    "The idea came up when I was talking to my girlfriend about my next picture I could draw."
+      "I wanted to make a 'Princess Of Centipede' picture. It's not really a princess, " +
+      "but a crazy looking girl with some centipedes which I named 'CindyPede'" +
+      "The idea came up when I was talking to my girlfriend about my next picture I could draw.",
   },
   {
     file: "greenFaces.png",
