@@ -1,5 +1,16 @@
 export const imgData = [
   {
+    file: "linz.png",
+    title: "Linz",
+    description: 
+      "I was not in the mood to draw anything because I was a bit tipsy and not in a good mood at all. " +
+      "But I'm glad I did it, because I absolutely like the result. I just drew some random faces with the digital pencil " + 
+      "and really liked the outcome and so I worked on. After that I decided to make a background of a familar place " + 
+      "and so I drew 'Linz' (City in Austria) by using a photo reference (from the internet - sue me!). " +
+      "It has no deeper meaning at all, but the fact that I use Linz as a background is the reason for the pictures name. " + 
+      "This artwork was fun to make and I did it in a few sessions."
+  },
+  {
     file: "jack.png",
     title: "Jack",
     description:
