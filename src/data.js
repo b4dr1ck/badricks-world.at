@@ -1,5 +1,11 @@
 export const imgData = [
-  {
+ {
+    file:"testOfEndurance.png",
+    title:"Test Of Endurance",
+    description: 
+      "Just a spontaneous idea I had while I was drawing a skull. I didn't even want to publish this picture, but I did."
+ },
+ {
     file: "linz.png",
     title: "Linz",
     description: 
