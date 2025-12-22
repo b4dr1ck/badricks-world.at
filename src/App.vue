@@ -39,6 +39,7 @@ export default {
         { icon: "artstat.png", url: "https://badrick.artstation.com/", title: "ArtStation" },
         { icon: "email.png", url: "email", title: "E-Mail" },
       ],
+      mail:"YmFkcmljazI1MTI4OEBnbWFpbC5jb20=",
     };
   },
 
@@ -89,7 +90,8 @@ export default {
     },
     openLink(url, _event) {
       if (url === "email") {
-        alert("Nope!");
+        const decodedMail = atob(this.mail);
+        window.location.href = `mailto:${decodedMail}`;
         return;
       }
       window.open(url, "_blank");
