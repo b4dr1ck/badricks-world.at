@@ -1,5 +1,16 @@
 export const imgData = [
   {
+    file: "aliens.png",
+    title: "Overpopulation",
+    description:
+      "I watched too much 'Rick and Morty' episodes the last weeks and so I had to do a picture about aliens. " +
+      "My first idea was to make a 'Creation Of Adam' styled picture with alien hands and many other aliens surrounding them. " +
+      "But I didn't get it to work the way I wanted, so I changed the concept a bit and created this artwork. " +
+      "It took me quite a while to finish it, as you can imagine, but I really like the result and guess it was worth the effort. " +
+      "Meanwhile my girlfriend finished two or three diamond paintings while I was working on this :D" +
+      "If you are bored you can try to count all the aliens and send me a message ;)",
+  },
+  {
     file: "skullsAndSkulls.png",
     title: "Skulls And Skulls",
     description:
