@@ -37,6 +37,7 @@ export default {
         { icon: "insta.png", url: "https://instagram.com/bad_rick_1988", title: "Instagram" },
         { icon: "pinterest.png", url: "https://at.pinterest.com/badrick251288", title: "Pinterest" },
         { icon: "artstat.png", url: "https://badrick.artstation.com/", title: "ArtStation" },
+        { icon: "behance.png", url: "https://behance.net/patrickreiter7", title: "Behance" },
         { icon: "email.png", url: "email", title: "E-Mail" },
       ],
       mail:"YmFkcmljazI1MTI4OEBnbWFpbC5jb20=",
