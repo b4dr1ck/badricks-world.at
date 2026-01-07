@@ -93,6 +93,9 @@ cd dist || {
   exit 5
 }
 
+rm -rv "${destination_dir}/assets/"
+rtcCheck $?
+
 cp -rv ./* "$destination_dir/"
 rtcCheck $?
 
