@@ -173,7 +173,7 @@ export default {
         </div>
       </template>
       <template v-slot:default>
-        <p style="background-color: rgba(0, 0, 0, 0.7); opacity: 0" class="text-body-1 pa-2 text-center text-red">
+        <p style="background-color: rgba(0, 0, 0, 0.7); opacity: 0" class="pa-2 text-center text-white text-h5">
           {{ img.title }}
         </p>
       </template>
