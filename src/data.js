@@ -1,5 +1,13 @@
 export const imgData = [
   {
+    file: "WhiteSmile.png",
+    title: "White Smile",
+    description:
+    "A bit of an exercise to practice shading with fine lines, which I hate doing, becaue I suck at it. :)" +
+    "Not long ago I played the game 'The Midnight Walk' and was fascinated by the art style of the game. " +
+    "This was an inspiration for this artwork. ",
+  },
+  {
     file: "aliens.png",
     title: "Overpopulation",
     description:
