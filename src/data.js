@@ -35,7 +35,7 @@ export const imgData = [
       "I started to draw some diffrent looking comic-like skulls I maybe could use for other works later. " +
       "After I had a few of them, I decided to put them together in this piece of work. " +
       "Not all of them look exactly like skulls, but you can see the resemblance. " +
-      "I also but an Eddie-like (Iron Maiden) face in there. Just for fun. :)",
+      "I also put an Eddie-like (Iron Maiden) face in there, because I like this mascot a lot and I'm a fan of Derek Riggs artworks. ",
   },
   {
     file: "testOfEndurance.png",
