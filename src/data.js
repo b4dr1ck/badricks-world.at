@@ -1,5 +1,15 @@
 export const imgData = [
   {
+    file: "suse.png",
+    title: "Suse",
+    description:
+    "A picture of my girlfriend in a funny cartoon-like style. " +
+    "I also drew my dogs 'Lucas' and 'Maja' in the foreground and a strange shadow that symbolizes my presence. " +
+    "It's again a painting without much colors, just black, white and some light pink in the background. " + 
+    "The focus here is the shading with fine lines again, like in my 'White Smile' artwork. " + 
+    "And of course a tribute to my beloved Suse. :)",
+  },
+  {
     file: "WhiteSmile.png",
     title: "White Smile",
     description:
