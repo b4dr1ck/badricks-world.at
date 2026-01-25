@@ -1,5 +1,12 @@
 export const imgData = [
-  {
+{
+    file: "psychedelicSkulls.png",
+    title: "PsycheDeadlic",
+    description:
+    "I tried to draw a skull in the 'radial symmetry' mode in my painting-app and worked it out a little bit. " +
+    "It was fun to see the result after adding some details und so I kept this picture and decided to put it on my page ", 
+},
+{
     file: "suse.png",
     title: "Suse",
     description:
@@ -13,7 +20,7 @@ export const imgData = [
     file: "WhiteSmile.png",
     title: "White Smile",
     description:
-    "A bit of an exercise to practice shading with fine lines, which I hate doing, becaue I suck at it. :)" +
+    "A bit of an exercise to practice shading with fine lines, which I hate doing, becaue I suck at it. :) " +
     "Not long ago I played the game 'The Midnight Walk' and was fascinated by the art style of the game. " +
     "This was an inspiration for this artwork. ",
   },
