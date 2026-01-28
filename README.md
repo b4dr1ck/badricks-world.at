@@ -25,5 +25,3 @@ cp -rf * /var/www/html # path to the website
 "./img/icons/" # icons for the social-media links
 "./banner.jpg " # for the background banner of the homepage
 ```
-
-
