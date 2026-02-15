@@ -1,28 +1,36 @@
 export const imgData = [
-{
+  {
+    file: "BeautyOfPain.png",
+    title: "The Beauty Of Pain",
+    description:
+    "It's about torture and pain with a 'Hellraiser' vibe. I'm not sure how I got this idea, but I wanted to play " +
+    "with perspectives and angles and decided to paint a picture about a guy who is tortured by some kind of cenobite. " +
+    "I planned the picture in a poseing software (poseit) first and used this as a reference. " 
+  },
+  {
     file: "psychedelicSkulls.png",
     title: "PsycheDeadlic",
     description:
-    "I tried to draw a skull in the 'radial symmetry' mode in my painting-app and worked it out a little bit. " +
-    "It was fun to see the result after adding some details und so I kept this picture and decided to put it on my page ", 
-},
-{
+      "I tried to draw a skull in the 'radial symmetry' mode in my painting-app and worked it out a little bit. " +
+      "It was fun to see the result after adding some details und so I kept this picture and decided to put it on my page ",
+  },
+  {
     file: "suse.png",
     title: "Suse",
     description:
-    "A picture of my girlfriend in a funny cartoon-like style. " +
-    "I also drew my dogs 'Lucas' and 'Maja' in the foreground and a strange shadow that symbolizes my presence. " +
-    "It's again a painting without much colors, just black, white and some light pink in the background. " + 
-    "The focus here is the shading with fine lines again, like in my 'White Smile' artwork. " + 
-    "And of course a tribute to my beloved Suse. :)",
+      "A picture of my girlfriend in a funny cartoon-like style. " +
+      "I also drew my dogs 'Lucas' and 'Maja' in the foreground and a strange shadow that symbolizes my presence. " +
+      "It's again a painting without much colors, just black, white and some light pink in the background. " +
+      "The focus here is the shading with fine lines again, like in my 'White Smile' artwork. " +
+      "And of course a tribute to my beloved Suse. :)",
   },
   {
     file: "WhiteSmile.png",
     title: "White Smile",
     description:
-    "A bit of an exercise to practice shading with fine lines, which I hate doing, becaue I suck at it. :) " +
-    "Not long ago I played the game 'The Midnight Walk' and was fascinated by the art style of the game. " +
-    "This was an inspiration for this artwork. ",
+      "A bit of an exercise to practice shading with fine lines, which I hate doing, becaue I suck at it. :) " +
+      "Not long ago I played the game 'The Midnight Walk' and was fascinated by the art style of the game. " +
+      "This was an inspiration for this artwork. ",
   },
   {
     file: "aliens.png",
