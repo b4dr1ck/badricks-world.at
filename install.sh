@@ -97,7 +97,7 @@ cd dist || {
 rm -rv "${destination_dir}/assets/"
 rtcCheck $?
 
-cp ../src/like.py "$destination_dir/"
+cp -rv ../src/like.py "$destination_dir/"
 rtcCheck $?
 
 cp -rv ./* "$destination_dir/"

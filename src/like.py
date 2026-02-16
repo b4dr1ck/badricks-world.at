@@ -21,7 +21,10 @@ def count_likes(likeFile):
 
 def main():
     likes = 0
-    ip = os.getenv("HTTP_HOST", "127.0.0.1")
+    # Get client IP, checking for proxy/load balancer first
+    ip = os.getenv("HTTP_X_FORWARDED_FOR", "").split(",")[0].strip()
+    if not ip:
+        ip = os.getenv("REMOTE_ADDR", "127.0.0.1")
     home = os.getenv("HOME", "/home/badrick")
     likeFile = os.path.join(home, "like.txt")
 
