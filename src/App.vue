@@ -9,6 +9,8 @@ export default {
   },
   data() {
     return {
+      likes: 0,
+      likeUrl: import.meta.env.DEV ? "http://127.0.0.1/like.py" : location.origin + "/like.py",
       coverCarousel: false,
       showSideNav: false,
       imgOverlay: false,
@@ -40,7 +42,7 @@ export default {
         { icon: "behance.png", url: "https://behance.net/patrickreiter7", title: "Behance" },
         { icon: "email.png", url: "email", title: "E-Mail" },
       ],
-      mail:"YmFkcmljazI1MTI4OEBnbWFpbC5jb20=",
+      mail: "YmFkcmljazI1MTI4OEBnbWFpbC5jb20=",
     };
   },
 
@@ -50,6 +52,8 @@ export default {
     window.addEventListener("resize", this.coverOnPortraitFormat);
     window.addEventListener("resize", this.showOnScroll);
     window.addEventListener("scroll", this.showOnScroll);
+
+    this.likeIt();
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.coverOnPortraitFormat);
@@ -62,10 +66,22 @@ export default {
       if (this.gridView) {
         return "mdi-grid";
       }
-      return "mdi-grid-large"
+      return "mdi-grid-large";
     },
   },
   methods: {
+    likeIt(event) {
+      fetch(this.likeUrl)
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.likes !== undefined) {
+            this.likes = data.likes;
+          }
+        })
+        .catch((error) => {
+          console.error("Error liking the page:", error);
+        });
+    },
     scrollToArea() {
       const scrollTo = this.$refs["socialLinks"];
 
@@ -128,6 +144,10 @@ export default {
       :src="`${settings.iconPath}${link.icon}`"
       @click="openLink(link.url, $event)"
       :alt="link.icon" />
+    <!-- Like button -->
+    <v-badge offset-y="10" location="top right" color="primary" :content="likes">
+      <v-icon icon="mdi-thumb-up" class="ma-4 cursor-pointer" title="Like the page!" @click="likeIt($event)"></v-icon>
+    </v-badge>
   </div>
 
   <!-- Carousel for featured images -->
@@ -201,7 +221,9 @@ h1 {
 }
 
 #carousel {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("/img/banner.png") repeat center center;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("/img/banner.png") repeat center center;
   background-size: cover;
   height: 82vh;
   position: relative;
@@ -263,4 +285,3 @@ h1 {
   filter: grayscale(100%);
 }
 </style>
-

@@ -55,7 +55,7 @@ if ls $assets_dir/*.png > /dev/null 2>&1; then
       rtcCheck $?
       echo ""
     fi
-        
+    
     if [ ! -d "$destination_dir/img/small" ]; then
       echo "* Creating destination subdirectories..."
       mkdir -vp "$destination_dir/img/small"
@@ -91,9 +91,13 @@ echo "* Deploying build to '$destination_dir'..."
 cd dist || {
   echo "Error: 'dist' directory does not exist after build."
   exit 5
+  
 }
 
 rm -rv "${destination_dir}/assets/"
+rtcCheck $?
+
+cp ../src/like.py "$destination_dir/"
 rtcCheck $?
 
 cp -rv ./* "$destination_dir/"
