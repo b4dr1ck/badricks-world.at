@@ -22,24 +22,21 @@ def count_likes(likeFile):
 def main():
     likes = 0
     request_method = os.getenv("REQUEST_METHOD", "GET")
+    home = os.getenv("HOME", "/home/badrick")
+    ip = os.getenv("HTTP_X_FORWARDED_FOR", "").split(",")[0].strip()
+    if not ip:
+        ip = os.getenv("REMOTE_ADDR", "127.0.0.1")
+    likeFile = os.path.join(home, "/web/badricks-world.at/.likes")
+    likes = count_likes(likeFile)
 
     # Handle GET request to return current like count
     if request_method == "GET":
-        likeFile = os.path.join(os.getenv("HOME", "/home/badrick"), "like.txt")
-        likes = count_likes(likeFile)
         print_headers()
         print(json.dumps({"likes": likes}))
         return
 
-    # Get client IP, checking for proxy/load balancer first
-    ip = os.getenv("HTTP_X_FORWARDED_FOR", "").split(",")[0].strip()
-    if not ip:
-        ip = os.getenv("REMOTE_ADDR", "127.0.0.1")
-    home = os.getenv("HOME", "/home/badrick")
-    likeFile = os.path.join(home, "like.txt")
-
+    # Handle POST request to add a like
     if os.path.exists(likeFile):
-        likes = count_likes(likeFile)
         with open(likeFile, "r") as f:
             if ip in f.read().splitlines():
                 print_headers()
@@ -55,7 +52,7 @@ def main():
 
     try:
         open(likeFile, "a").write(ip + "\n")
-        likes = count_likes(likeFile)
+        likes += 1
         print_headers()
         print(json.dumps({"message": "Thanks for liking the page!", "likes": likes}))
     except Exception as e:

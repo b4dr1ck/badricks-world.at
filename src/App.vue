@@ -139,11 +139,12 @@ export default {
   ></image-viewer>
 
   <!-- Social media links -->
-  <div id="socialMediaLinks" class="d-flex justify-center pb-2" ref="socialLinks">
+  <div id="socialMediaLinks" class="d-flex justify-center" ref="socialLinks">
     <img
       :title="link.title"
       width="40"
-      class="ma-2 cursor-pointer"
+      height="40"
+      class="ma-1 mt-2 cursor-pointer"
       v-for="(link, index) in links"
       :key="'link-' + index"
       :src="`${settings.iconPath}${link.icon}`"
@@ -151,8 +152,8 @@ export default {
       :alt="link.icon"
     />
     <!-- Like button -->
-    <v-badge offset-y="25" location="top right" color="primary" :content="likes">
-      <v-icon icon="mdi-thumb-up" class="ma-4 cursor-pointer" title="Like the page!" @click="likeIt('POST')"></v-icon>
+    <v-badge offset-y="15" offset-x="-5" location="top right" color="primary" :content="likes">
+      <v-icon icon="mdi-thumb-up" class="ma-1 mt-4 cursor-pointer text-grey" title="Like the page!" @click="likeIt('POST')"></v-icon>
     </v-badge>
   </div>
 
