@@ -151,7 +151,7 @@ export default {
       :alt="link.icon"
     />
     <!-- Like button -->
-    <v-badge offset-y="10" location="top right" color="primary" :content="likes">
+    <v-badge offset-y="25" location="top right" color="primary" :content="likes">
       <v-icon icon="mdi-thumb-up" class="ma-4 cursor-pointer" title="Like the page!" @click="likeIt('POST')"></v-icon>
     </v-badge>
   </div>
