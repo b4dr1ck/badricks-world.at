@@ -7,7 +7,7 @@ import json
 def print_headers():
     print(f"Content-Type: application/json")
     print("Access-Control-Allow-Origin: *")
-    print("Access-Control-Allow-Methods: GET, POST, OPTIONS")
+    print("Access-Control-Allow-Methods: GET, POST")
     print("Access-Control-Allow-Headers: Content-Type")
     print()
 
@@ -21,6 +21,16 @@ def count_likes(likeFile):
 
 def main():
     likes = 0
+    request_method = os.getenv("REQUEST_METHOD", "GET")
+
+    # Handle GET request to return current like count
+    if request_method == "GET":
+        likeFile = os.path.join(os.getenv("HOME", "/home/badrick"), "like.txt")
+        likes = count_likes(likeFile)
+        print_headers()
+        print(json.dumps({"likes": likes}))
+        return
+
     # Get client IP, checking for proxy/load balancer first
     ip = os.getenv("HTTP_X_FORWARDED_FOR", "").split(",")[0].strip()
     if not ip:
