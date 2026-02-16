@@ -26,7 +26,7 @@ def main():
     ip = os.getenv("HTTP_X_FORWARDED_FOR", "").split(",")[0].strip()
     if not ip:
         ip = os.getenv("REMOTE_ADDR", "127.0.0.1")
-    likeFile = os.path.join(home, "/web/badricks-world.at/.likes")
+    likeFile = os.path.join(home, "web/badricks-world.at/.likes")
     likes = count_likes(likeFile)
 
     # Handle GET request to return current like count
