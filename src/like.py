@@ -43,7 +43,7 @@ def main():
                 print(
                     json.dumps(
                         {
-                            "message": "Thanks for liking the page - again!",
+                            "message": "Thanks for liking the page - AGAIN!",
                             "likes": likes,
                         }
                     )
@@ -54,7 +54,7 @@ def main():
         open(likeFile, "a").write(ip + "\n")
         likes += 1
         print_headers()
-        print(json.dumps({"message": "Thanks for liking the page!", "likes": likes}))
+        print(json.dumps({"message": "Thanks for liking the page! 🖤", "likes": likes}))
     except Exception as e:
         print_headers()
         print(json.dumps({"error": str(e)}))

@@ -10,8 +10,9 @@ export default {
   data() {
     return {
       likes: 0,
-      likeMessage:"",
+      likeMessage: "",
       likeUrl: import.meta.env.DEV ? "http://127.0.0.1/like.py" : location.origin + "/like.py",
+      dialog: false,
       coverCarousel: false,
       showSideNav: false,
       imgOverlay: false,
@@ -80,6 +81,7 @@ export default {
           }
           if (data.message !== undefined) {
             this.likeMessage = data.message;
+            this.dialog = true;
           }
         })
         .catch((error) => {
@@ -128,6 +130,14 @@ export default {
 </script>
 
 <template>
+  <v-dialog v-model="dialog" width="auto">
+    <v-card max-width="400" prepend-icon="mdi-emoticon-devil-outline" :text="likeMessage" title="Thank You!">
+      <template v-slot:actions>
+        <v-btn class="ms-auto" text="Ok" @click="dialog = false"></v-btn>
+      </template>
+    </v-card>
+  </v-dialog>
+
   <!-- Image viewer overlay -->
   <image-viewer
     @close="imgOverlay = false"
@@ -135,8 +145,7 @@ export default {
     :settings="settings"
     :imgFile="imgFile"
     :imgTitle="imgTitle"
-    :imgDesc="imgDesc"
-  ></image-viewer>
+    :imgDesc="imgDesc"></image-viewer>
 
   <!-- Social media links -->
   <div id="socialMediaLinks" class="d-flex justify-center" ref="socialLinks">
@@ -149,11 +158,14 @@ export default {
       :key="'link-' + index"
       :src="`${settings.iconPath}${link.icon}`"
       @click="openLink(link.url, $event)"
-      :alt="link.icon"
-    />
+      :alt="link.icon" />
     <!-- Like button -->
     <v-badge offset-y="15" offset-x="-5" location="top right" color="primary" :content="likes">
-      <v-icon icon="mdi-thumb-up" class="ma-1 mt-4 cursor-pointer text-grey" title="Like the page!" @click="likeIt('POST')"></v-icon>
+      <v-icon
+        icon="mdi-thumb-up"
+        class="ma-1 mt-4 cursor-pointer text-grey"
+        title="Like the page!"
+        @click="likeIt('POST')"></v-icon>
     </v-badge>
   </div>
 
@@ -176,8 +188,7 @@ export default {
         :key="'carousel-' + index"
         :src="`${settings.imgOrigPath}${img}`"
         :lazy-src="`${settings.imgSmallPath}${img}`"
-        :alt="img"
-      >
+        :alt="img">
       </v-carousel-item>
     </v-carousel>
   </div>
@@ -194,8 +205,7 @@ export default {
       class="ma-1 cursor-pointer"
       cover
       :lazy-src="`${settings.imgSmallPath}${img.file}`"
-      :src="`${settings.imgOrigPath}${img.file}`"
-    >
+      :src="`${settings.imgOrigPath}${img.file}`">
       <template v-slot:placeholder>
         <div class="d-flex align-center justify-center fill-height">
           <v-progress-circular color="grey-lighten-4" indeterminate></v-progress-circular>
