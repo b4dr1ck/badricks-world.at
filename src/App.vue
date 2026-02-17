@@ -42,6 +42,7 @@ export default {
         { icon: "pinterest.png", url: "https://at.pinterest.com/badrick251288", title: "Pinterest" },
         { icon: "artstat.png", url: "https://badrick.artstation.com/", title: "ArtStation" },
         { icon: "behance.png", url: "https://behance.net/patrickreiter7", title: "Behance" },
+        { icon: "fb.png", url: "https://www.facebook.com/profile.php?id=61588413117029", title: "Facebook" },
         { icon: "email.png", url: "email", title: "E-Mail" },
       ],
       mail: "YmFkcmljazI1MTI4OEBnbWFpbC5jb20=",
