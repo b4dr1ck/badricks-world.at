@@ -48,10 +48,20 @@ if ls $assets_dir/*.png > /dev/null 2>&1; then
     echo "Convert..."
     convert -verbose -resize 5% "$img" "$assets_dir/small_$filename"
     echo ""
+    echo "Convert..."
+    convert -verbose -resize 25% "$img" "$assets_dir/thumb_$filename"
+    echo ""
     
     if [ ! -d "$destination_dir/img/original" ]; then
       echo "* Creating destination subdirectories..."
       mkdir -vp "$destination_dir/img/original"
+      rtcCheck $?
+      echo ""
+    fi
+
+    if [ ! -d "$destination_dir/img/thumbnails" ]; then
+      echo "* Creating destination subdirectories..."
+      mkdir -vp "$destination_dir/img/thumbnails"
       rtcCheck $?
       echo ""
     fi
@@ -68,6 +78,8 @@ if ls $assets_dir/*.png > /dev/null 2>&1; then
     rtcCheck $?
     mv -v "$assets_dir/small_$filename" "$destination_dir/img/small/$filename"
     rtcCheck $?
+    mv -v "$assets_dir/thumb_$filename" "$destination_dir/img/thumbnails/$filename"
+    rtcCheck $?
     echo ""
     echo ""
   done
@@ -75,7 +87,10 @@ fi
 
 echo "* Pull Repository"
 
-cd $repo_dir
+cd "$repo_dir" || {
+  echo "Error: Failed to change directory to '$repo_dir'."
+  exit 5
+}
 
 git pull origin master
 rtcCheck $?

@@ -30,7 +30,8 @@ export default {
       ],
       settings: {
         imgOrigPath: "/img/original/",
-        imgSmallPath: "/img/small/",
+        imgThumbnailsPath: "/img/thumbnails/",
+        imgPlaceholderPath: "/img/small/",
         iconPath: "/img/icons/",
         carouselMaxHeight: "82vh",
         imgThumbHeight: 300,
@@ -184,7 +185,7 @@ export default {
         v-for="(img, index) in carouselImg"
         :key="'carousel-' + index"
         :src="`${settings.imgOrigPath}${img}`"
-        :lazy-src="`${settings.imgSmallPath}${img}`"
+        :lazy-src="`${settings.imgPlaceholderPath}${img}`"
         :alt="img">
       </v-carousel-item>
     </v-carousel>
@@ -201,8 +202,8 @@ export default {
       :width="settings.imgThumbWidth"
       class="ma-1 cursor-pointer"
       cover
-      :lazy-src="`${settings.imgSmallPath}${img.file}`"
-      :src="`${settings.imgOrigPath}${img.file}`">
+      :lazy-src="`${settings.imgPlaceholderPath}${img.file}`"
+      :src="`${settings.imgThumbnailsPath}${img.file}`">
       <template v-slot:placeholder>
         <div class="d-flex align-center justify-center fill-height">
           <v-progress-circular color="grey-lighten-4" indeterminate></v-progress-circular>
