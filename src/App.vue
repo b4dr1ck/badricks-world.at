@@ -172,11 +172,11 @@ export default {
     <!-- Overlay Text -->
     <div id="carousel-overlay" class="d-flex align-center justify-center">
       <!-- Title -->
-      <div style="width: 100%">
-        <h1 class="text-h1 text-center bg-black pa-0 ma-0">badricks-world.at</h1>
-        <p class="text-body-1 text-center bg-black pb-5 ma-0 font-weight-bold">
+      <div class="pa-4 bg-black" style="width: 100%">
+        <h1 class="text-h1 text-white text-center pa-0 ma-0">badricks-world</h1>
+        <h2 class="text-h6 text-grey-lighten-1 text-center pb-5 ma-0 font-weight-bold">
           All work and no drawing makes badrick a dull boy!
-        </p>
+        </h2>
       </div>
     </div>
     <v-carousel cycle :height="settings.carouselMaxHeight" :show-arrows="false">
@@ -233,8 +233,17 @@ export default {
   src: url("/fonts/dirtyego.TTF");
 }
 
+@font-face {
+  font-family: "subTitleFont";
+  src: url("/fonts/theend.ttf");
+}
+
 h1 {
   font-family: "headerFont", sans-serif !important;
+}
+
+h2 {
+  font-family: "subTitleFont", sans-serif !important;
 }
 
 #carousel {
@@ -253,7 +262,7 @@ h1 {
   width: 100%;
   height: 100%;
   z-index: 10;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 .v-carousel__controls {
@@ -278,7 +287,8 @@ h1 {
   }
 }
 
-#socialMediaLinks img:hover,.v-badge:hover .v-icon {
+#socialMediaLinks img:hover,
+.v-badge:hover .v-icon {
   filter: contrast(0) brightness(2);
   animation: shakeUpDown 0.3s ease-in-out;
   animation-iteration-count: 1;
