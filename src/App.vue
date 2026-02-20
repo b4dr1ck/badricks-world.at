@@ -90,11 +90,7 @@ export default {
         });
     },
     scrollToArea() {
-      const scrollTo = this.$refs["socialLinks"];
-
-      if (scrollTo) {
-        scrollTo.scrollIntoView({ behavior: "smooth" });
-      }
+      window.scrollTo({ top: 0, behavior: "smooth" });
       this.showSideNav = false;
     },
     coverOnPortraitFormat() {
@@ -149,7 +145,7 @@ export default {
     :imgDesc="imgDesc"></image-viewer>
 
   <!-- Social media links -->
-  <div id="socialMediaLinks" class="d-flex justify-center" ref="socialLinks">
+  <div id="socialMediaLinks" class="d-flex justify-center">
     <img
       :title="link.title"
       width="40"
@@ -281,7 +277,7 @@ h1 {
   }
 }
 
-#socialMediaLinks img:hover {
+#socialMediaLinks img:hover,.v-badge:hover .v-icon {
   filter: contrast(0) brightness(2);
   animation: shakeUpDown 0.3s ease-in-out;
   animation-iteration-count: 1;
