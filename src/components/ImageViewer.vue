@@ -64,7 +64,7 @@ export default {
       <v-btn title="Show Image" class="mx-1" @click="showImage($event)" icon="mdi-image"></v-btn>
     </div>
     <div style="z-index: 300; width: 100%" class="position-absolute mt-15 overlay" v-if="showInfo">
-      <h2 class="text-h2 text-left">{{ imgTitle }}</h2>
+      <h2 class="text-h5 text-left">{{ imgTitle }}</h2>
       <p v-html="imgDesc" class="text-body-1 text-left mt-2 pa-2"></p>
     </div>
     <v-img
