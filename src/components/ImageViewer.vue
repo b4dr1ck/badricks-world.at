@@ -70,7 +70,7 @@ export default {
     <v-img
       height="100%"
       @click="close"
-      :lazy-src="`${settings.imgSmallPath}${imgFile}`"
+      :lazy-src="`${settings.imgThumbnailsPath}${imgFile}`"
       :src="`${settings.imgOrigPath}${imgFile}`"
       :alt="imgTitle"></v-img>
   </div>
