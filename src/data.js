@@ -1,5 +1,15 @@
 export const imgData = [
   {
+    file: "LegalAddictions.png",
+    title: "Legal Addictions",
+    description:
+    "It took me a long time to finish this but it was quite a fun. " +
+    "The idea is to give a little reminder to the legal drugs we are consuming day after day. " +
+    "I also have to look at myself not to get caught by some addictions and so I came to the idea to handle it in a picture. " +
+    "The artwork shows a skeleton with a cig in his hand and a glass whisky in the other hand. " +
+    "Out of the smoke appear some demons similar to the 'demon walls' I already created in some other pictures too. "
+  }, 
+  {
     file: "BeautyOfPain.png",
     title: "The Beauty Of Pain",
     description:
