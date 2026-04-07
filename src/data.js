@@ -1,21 +1,31 @@
 export const imgData = [
   {
+    file: "Lonesome.png",
+    title: "Mr. Lonely",
+    description:
+      "I did this picture very fast, just in two sessions. A nice variety to my last artworks which often took me weeks to finish. " +
+      "I really had nothing in my mind when I started to draw the sketch, but I liked the look of the face and decided to work on it further. " +
+      "After some lines I knew it would be something alien-like with a background of a foreign planet. " +
+      "When I finished the picture I thought that the alien looks a bit sad and lonley and so I called it 'Mr. Lonely'. " +
+      "I also had the song 'Mr. Lonely' by Bobby Vinton in my head while I published this picture on Instagram, which was the reason for the title. ",
+  },
+  {
     file: "LegalAddictions.png",
     title: "Legal Addictions",
     description:
-    "It took me a long time to finish this but it was quite a fun. " +
-    "The idea is to give a little reminder to the legal drugs we are consuming day after day. " +
-    "I also have to look at myself not to get caught by some addictions and so I came to the idea to handle it in a picture. " +
-    "The artwork shows a skeleton with a cig in his hand and a glass whisky in the other hand. " +
-    "Out of the smoke appear some demons similar to the 'demon walls' I already created in some other pictures too. "
-  }, 
+      "It took me a long time to finish this but it was quite a fun. " +
+      "The idea is to give a little reminder to the legal drugs we are consuming day after day. " +
+      "I also have to look at myself not to get caught by some addictions and so I came to the idea to handle it in a picture. " +
+      "The artwork shows a skeleton with a cig in his hand and a glass whisky in the other hand. " +
+      "Out of the smoke appear some demons similar to the 'demon walls' I already created in some other pictures too. ",
+  },
   {
     file: "BeautyOfPain.png",
     title: "The Beauty Of Pain",
     description:
-    "It's about torture and pain with a 'Hellraiser' vibe. I'm not sure how I got this idea, but I wanted to play " +
-    "with perspectives and angles and decided to paint a picture about a guy who is tortured by some kind of cenobite. " +
-    "I planned the picture in a poseing software (poseit) first and used this as a reference. " 
+      "It's about torture and pain with a 'Hellraiser' vibe. I'm not sure how I got this idea, but I wanted to play " +
+      "with perspectives and angles and decided to paint a picture about a guy who is tortured by some kind of cenobite. " +
+      "I planned the picture in a poseing software (poseit) first and used this as a reference. ",
   },
   {
     file: "psychedelicSkulls.png",
