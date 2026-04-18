@@ -1,4 +1,14 @@
 export const imgData = [
+  { 
+    file: "badpin.png",
+    title: "Bad Pin",
+    description:
+      "I wanted to paint a undead or a demon holding a skull in his hand. It was just a simple idea and I liked to work further on this. " + 
+      "After I scuplted the body in my app and did a rough sketch I had the idea to paint an undead guy at the bowling center. " + 
+      "The position reminded me too much of a person holding a bowling ball in his hand, ready to shoot some strikes - so I had to do this. " + 
+      "It was pretty much fun to paint the bowling center and all the little details even when I don't care about bowling " + 
+      "Maybe someone could use this as a mascot for a bowling team :D "
+  },
   {
     file: "Lonesome.png",
     title: "Mr. Lonely",
