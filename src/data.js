@@ -1,5 +1,10 @@
 export const imgData = [
-  { 
+  {
+   file: "surrealStuffAgain.png",
+   title: "The Warmth Of Modernity",
+   description: "",
+  },
+  {
     file: "badpin.png",
     title: "Bad Pin",
     description:
