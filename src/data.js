@@ -1,17 +1,25 @@
 export const imgData = [
   {
+   file:"RedAndFaces.png",
+   title: "Brain Off",
+   description:
+   "Just a doodle I worked on when I had no idea what to paint. Only one simple pen, no layers, no concept - just me and my hand and the brain turned off!"
+  },
+  {
    file: "surrealStuffAgain.png",
    title: "The Warmth Of Modernity",
-   description: "",
+   description:
+      "When I walk through an idyllic landscape and see, between the rural village romance, a concrete block they call 'modern building' " +
+      "I think about the 'warmth of modernity' and say 'Fuck It!'. This picture is dedicated to this. "
   },
   {
     file: "badpin.png",
     title: "Bad Pin",
     description:
-      "I wanted to paint a undead or a demon holding a skull in his hand. It was just a simple idea and I liked to work further on this. " + 
-      "After I scuplted the body in my app and did a rough sketch I had the idea to paint an undead guy at the bowling center. " + 
-      "The position reminded me too much of a person holding a bowling ball in his hand, ready to shoot some strikes - so I had to do this. " + 
-      "It was pretty much fun to paint the bowling center and all the little details even when I don't care about bowling " + 
+      "I wanted to paint a undead or a demon holding a skull in his hand. It was just a simple idea and I liked to work further on this. " +
+      "After I scuplted the body in my app and did a rough sketch I had the idea to paint an undead guy at the bowling center. " +
+      "The position reminded me too much of a person holding a bowling ball in his hand, ready to shoot some strikes - so I had to do this. " +
+      "It was pretty much fun to paint the bowling center and all the little details even when I don't care about bowling " +
       "Maybe someone could use this as a mascot for a bowling team :D "
   },
   {
