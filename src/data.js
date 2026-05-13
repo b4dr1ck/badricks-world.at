@@ -1,5 +1,15 @@
 export const imgData = [
   {
+    file: "Necromancer.png",
+    title: "Silent Sadness",
+    description:
+    "I started with a pencil drawing of an undead necromancer like figure and colored it in a blue-violet tone. " +
+    "This time I left the pencil drawing visible and I think it looks quite nice. " +
+    "I titled it 'Silent Sadness' because of the tears running down the face and the overall mood of the picture " + 
+    "and because I suck at finding original titles. :) " +
+    "All fun stuff in one picture - undead, skulls, magic, hood - things I like to draw. "
+  },
+  {
    file:"RedAndFaces.png",
    title: "Brain Off",
    description:
