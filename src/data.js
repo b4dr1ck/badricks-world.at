@@ -1,11 +1,21 @@
 export const imgData = [
   {
+   file: "vaerity.png",
+   title: "Vaerity",
+   description:
+   "Sometimes I just use a color and paint a face, without any sketch or planing the picture. " +
+   "After painting the first face (the blue one in the center with the funny hairstyle) I painted another one and " +
+   "antoher and so on. I tried to use different colors for the skin and also for the hair to get a nice vaerity, " +
+   "which is also the title of the picture. " +
+   "If you are looking for a deeper meaning behind this image, have fun. It wasn't intentional."
+  },
+  {
     file: "Necromancer.png",
     title: "Silent Sadness",
     description:
     "I started with a pencil drawing of an undead necromancer like figure and colored it in a blue-violet tone. " +
     "This time I left the pencil drawing visible and I think it looks quite nice. " +
-    "I titled it 'Silent Sadness' because of the tears running down the face and the overall mood of the picture " + 
+    "I titled it 'Silent Sadness' because of the tears running down the face and the overall mood of the picture " +
     "and because I suck at finding original titles. :) " +
     "All fun stuff in one picture - undead, skulls, magic, hood - things I like to draw. "
   },
