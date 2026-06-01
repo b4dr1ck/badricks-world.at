@@ -1,5 +1,13 @@
 export const imgData = [
   {
+  file: "FutureFreak.png",
+  title: "Future Freak",
+  description:
+  "Not much to say 'bout this picture. Just a random face in a future-like scene. The idea for the title comes from " +
+  "a cover of a horror movie, called 'Castle Freak', that shows a freaky face with a similar hairstyle. " +
+  "Yeah, titles are difficult sometimes, so I don't think too much about it and just try to be spontaneous. "
+  },
+  {
    file: "vaerity.png",
    title: "Vaerity",
    description:
