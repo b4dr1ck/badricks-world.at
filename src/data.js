@@ -1,44 +1,52 @@
 export const imgData = [
   {
-  file: "FutureFreak.png",
-  title: "Future Freak",
-  description:
-  "Not much to say 'bout this picture. Just a random face in a future-like scene. The idea for the title comes from " +
-  "a cover of a horror movie, called 'Castle Freak', that shows a freaky face with a similar hairstyle. " +
-  "Yeah, titles are difficult sometimes, so I don't think too much about it and just try to be spontaneous. "
+    file: "coolGhoul.png",
+    title: "Cool Ghoul / Pin Eye",
+    description:
+      "A random work similar to the 'Silent Sadness' picture. This one shows a ghoul-like face with two black pin-like eyes " +
+      "and some piercings in his nose, lips and eyebrows. The piercings are a reference to my girlfriend who has a lot of piercings too. " +
+      "Again I used the technique of leaving the pencil drawing visible and just painting over it, which I think gives the picture a nicer look. ",
   },
   {
-   file: "vaerity.png",
-   title: "Vaerity",
-   description:
-   "Sometimes I just use a color and paint a face, without any sketch or planing the picture. " +
-   "After painting the first face (the blue one in the center with the funny hairstyle) I painted another one and " +
-   "antoher and so on. I tried to use different colors for the skin and also for the hair to get a nice vaerity, " +
-   "which is also the title of the picture. " +
-   "If you are looking for a deeper meaning behind this image, have fun. It wasn't intentional."
+    file: "FutureFreak.png",
+    title: "Future Freak",
+    description:
+      "Not much to say 'bout this picture. Just a random face in a future-like scene. The idea for the title comes from " +
+      "a cover of a horror movie, called 'Castle Freak', that shows a freaky face with a similar hairstyle. " +
+      "Yeah, titles are difficult sometimes, so I don't think too much about it and just try to be spontaneous. ",
+  },
+  {
+    file: "vaerity.png",
+    title: "Vaerity",
+    description:
+      "Sometimes I just use a color and paint a face, without any sketch or planing the picture. " +
+      "After painting the first face (the blue one in the center with the funny hairstyle) I painted another one and " +
+      "antoher and so on. I tried to use different colors for the skin and also for the hair to get a nice vaerity, " +
+      "which is also the title of the picture. " +
+      "If you are looking for a deeper meaning behind this image, have fun. It wasn't intentional.",
   },
   {
     file: "Necromancer.png",
     title: "Silent Sadness",
     description:
-    "I started with a pencil drawing of an undead necromancer like figure and colored it in a blue-violet tone. " +
-    "This time I left the pencil drawing visible and I think it looks quite nice. " +
-    "I titled it 'Silent Sadness' because of the tears running down the face and the overall mood of the picture " +
-    "and because I suck at finding original titles. :) " +
-    "All fun stuff in one picture - undead, skulls, magic, hood - things I like to draw. "
+      "I started with a pencil drawing of an undead necromancer like figure and colored it in a blue-violet tone. " +
+      "This time I left the pencil drawing visible and I think it looks quite nice. " +
+      "I titled it 'Silent Sadness' because of the tears running down the face and the overall mood of the picture " +
+      "and because I suck at finding original titles. :) " +
+      "All fun stuff in one picture - undead, skulls, magic, hood - things I like to draw. ",
   },
   {
-   file:"RedAndFaces.png",
-   title: "Brain Off",
-   description:
-   "Just a doodle I worked on when I had no idea what to paint. Only one simple pen, no layers, no concept - just me and my hand and the brain turned off!"
+    file: "RedAndFaces.png",
+    title: "Brain Off",
+    description:
+      "Just a doodle I worked on when I had no idea what to paint. Only one simple pen, no layers, no concept - just me and my hand and the brain turned off!",
   },
   {
-   file: "surrealStuffAgain.png",
-   title: "The Warmth Of Modernity",
-   description:
+    file: "surrealStuffAgain.png",
+    title: "The Warmth Of Modernity",
+    description:
       "When I walk through an idyllic landscape and see, between the rural village romance, a concrete block they call 'modern building' " +
-      "I think about the 'warmth of modernity' and say 'Fuck It!'. This picture is dedicated to this. "
+      "I think about the 'warmth of modernity' and say 'Fuck It!'. This picture is dedicated to this. ",
   },
   {
     file: "badpin.png",
@@ -48,7 +56,7 @@ export const imgData = [
       "After I scuplted the body in my app and did a rough sketch I had the idea to paint an undead guy at the bowling center. " +
       "The position reminded me too much of a person holding a bowling ball in his hand, ready to shoot some strikes - so I had to do this. " +
       "It was pretty much fun to paint the bowling center and all the little details even when I don't care about bowling " +
-      "Maybe someone could use this as a mascot for a bowling team :D "
+      "Maybe someone could use this as a mascot for a bowling team :D ",
   },
   {
     file: "Lonesome.png",
