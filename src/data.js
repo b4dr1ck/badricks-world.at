@@ -1,5 +1,14 @@
 export const imgData = [
   {
+    file:"fagTheSys.png",
+    title: "Untitled",
+    description:
+    "Some months ago since I created my last picture..." + 
+    "I had some troubles in my relationship and was not in the mood to create any artworks. " +
+    "But now I am back! I had no idea what to paint and this is what came out of it :) " +
+    "Maybe I could offend some people with this picture, but I don't care. "
+  },
+  {
     file: "coolGhoul.png",
     title: "Cool Ghoul / Pin Eye",
     description:
