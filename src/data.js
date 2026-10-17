@@ -1,5 +1,13 @@
 export const imgData = [
   {
+   file:"necromancer1.png",
+   title: "Ghoul Lord",
+   description:
+   "It took me much longer than expected to finish this picture. It shows some kind of necromancer squats down on " +
+   "a pile of skulls. The name 'Ghoul Lord' is a nickname (actually Lord Ghoul) I used in many games for my avatar. " +
+   "There was also a story I wrote for this character long agon and I also did a Heroes of Might and Magic map about this lore too."
+  },
+  {
     file:"fagTheSys.png",
     title: "Untitled",
     description:
