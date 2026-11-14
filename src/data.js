@@ -1,5 +1,14 @@
 export const imgData = [
   {
+    file:"beholder.png",
+    title: "Eye Of The Beholder",
+    description:
+    "I realy love RPG's (Role-Playing Games) and especially Dungeon Crawlers. So I wanted to create a fantasy-like picture in the style of a Dungeons & Dragons. " +
+    "I do a lot of fantasy-like artworks, but most of them are more in a dark and horror style. This one is more in a fantasy style, " +
+    "which is a bit of a departure from my usual work. The characters I created in a modeling software first to get the right pose and perspective and then painted over it. " +
+    "It's a very common workflow for me to use 3D models as a reference for my paintings nowadays. "
+  },
+  {
    file:"necromancer1.png",
    title: "Ghoul Lord",
    description:
