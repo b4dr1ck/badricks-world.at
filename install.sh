@@ -15,7 +15,7 @@ rtcCheck() {
 }
 
 # write log file
-LOGFILE="install_$(date "+%Y%M%d_%H%M%S").log"
+LOGFILE="install_$(date "+%Y%m%d_%H%M%S").log"
 exec > >(tee -a "$LOGFILE") 2>&1
 
 
